@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 1.1,
+          "height": 2.0,
+          "width": 1.905
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.39999999999999997
         }
       },
       "diff_pair_dimensions": [
@@ -70,6 +70,7 @@
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
@@ -88,6 +89,7 @@
         "silk_over_copper": "error",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
+        "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
         "track_width": "error",
@@ -104,9 +106,9 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_copper_edge_clearance": 0.024999999999999998,
-        "min_hole_clearance": 0.0,
+        "min_clearance": 0.09999999999999999,
+        "min_copper_edge_clearance": 0.25,
+        "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
@@ -122,9 +124,13 @@
         0.25,
         0.33,
         0.5,
+        0.75,
+        1.0,
         1.27,
         2.0,
         2.54,
+        3.0,
+        4.0,
         5.0
       ],
       "via_dimensions": [
@@ -135,6 +141,10 @@
         {
           "diameter": 0.6,
           "drill": 0.3
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.66
         },
         {
           "diameter": 2.0,
@@ -367,7 +377,7 @@
     "classes": [
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.1,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -383,12 +393,39 @@
         "wire_width": 6.0
       },
       {
+        "bus_width": 12.0,
+        "clearance": 0.1,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Analog",
+        "nets": [
+          "/BATTERY/VBat+",
+          "/BATTERY/VCurrent_Batt+",
+          "/MCU/VCurrent_Load",
+          "/MCU/VCurrent_Output",
+          "/MCU/VCurrent_Solr",
+          "/MCU/VLoad+",
+          "/MCU/VOutput+",
+          "/MCU/VSolr+"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6.0
+      },
+      {
         "bus_width": 0.0,
-        "clearance": 1.0,
+        "clearance": 0.5,
         "diff_pair_gap": 0.0,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.0,
-        "line_style": -1,
+        "line_style": 0,
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
         "name": "Power",
@@ -402,7 +439,7 @@
       }
     ],
     "meta": {
-      "version": 1
+      "version": 2
     },
     "net_colors": null
   },
@@ -460,12 +497,32 @@
   },
   "sheets": [
     [
-      "9acac21c-2d99-489c-9f9b-d3668aeab15d",
+      "37742242-4bd3-43da-ba1b-5f1a71dea0e5",
       ""
     ],
     [
-      "cd000158-d79e-4537-961c-8333b03f24b0",
-      "Controller"
+      "a4ba16db-9735-4d86-b3d0-d105f09eb884",
+      "MCU"
+    ],
+    [
+      "0cd1335f-feb2-43b1-9360-f076b271f1aa",
+      "MPPT"
+    ],
+    [
+      "e5453b4f-1bdb-42ed-9698-691ee631d9dc",
+      "PSU"
+    ],
+    [
+      "029028ba-5757-4d0d-bf20-a0af7c517500",
+      "FrontPanel"
+    ],
+    [
+      "500bedbc-b512-45f8-b103-69cfbdfbee60",
+      "OUTPUT"
+    ],
+    [
+      "baf33a82-dd29-4dc3-9216-cb3f7018362e",
+      "BATTERY"
     ]
   ],
   "text_variables": {}

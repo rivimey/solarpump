@@ -1,5 +1,3 @@
 (fp_lib_table
-  (lib (name "solarpump")(type "KiCad")(uri "/home/ruth/solarpump v2/")(options "")(descr ""))
-  (lib (name "rp2040_stamp")(type "KiCad")(uri "/$(KIPROJMOD)/rp2040_stamp_footprints-main/KiCad/RP2040_Stamp.pretty")(options "")(descr ""))
-  (lib (name "solar")(type "KiCad")(uri "${KIPRJMOD}/solar.pretty")(options "")(descr ""))
+  (lib (name "solarpump")(type "KiCad")(uri "${KIPRJMOD}/solarpump.pretty")(options "")(descr ""))
 )

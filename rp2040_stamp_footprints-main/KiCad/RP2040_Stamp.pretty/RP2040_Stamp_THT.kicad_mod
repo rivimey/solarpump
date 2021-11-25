@@ -1,5 +1,5 @@
-(footprint "RP2040_Stamp_THT" (version 20210606) (generator pcbnew) (layer "F.Cu")
-  (tedit 60CD0C94)
+(footprint "RP2040_Stamp_THT" (version 20210722) (generator pcbnew) (layer "F.Cu")
+  (tedit 6170AD29)
   (attr through_hole)
   (fp_text reference "REF**" (at 12 13.4 unlocked) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
@@ -109,7 +109,7 @@
   (pad "39" smd rect locked (at -7 -11.65 270) (size 2.8 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp aaeaa1d8-d020-434f-9682-8f44d4e1dd90))
   (pad "40" smd rect locked (at -9 -11.65 270) (size 2.8 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 467952d0-0a9a-4a65-8d78-310209b0206d))
   (pad "40" thru_hole oval locked (at -9 -11) (size 1.35 1.35) (drill 0.8) (layers *.Cu *.Mask) (tstamp dab46582-d741-4ceb-a320-b50dd5243d25))
-  (model "${KIPRJMOD}/RP2040 stamp v1.1.step"
+  (model "${KIPRJMOD}/3dmodels/RP2040 stamp v1.1.step"
     (offset (xyz -12.7 12.7 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
