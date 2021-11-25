@@ -47,7 +47,7 @@ see that what I had would probably have issues.
 
 I did get as far as a KiCad PCB design, though:
 
-![The abandoned Solarpump v2](/3dpics/solarpump 1.png)
+![The abandoned Solarpump v2]("/3dpics/solarpump 1.png")
 
 ## Second build
 
