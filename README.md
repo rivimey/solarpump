@@ -47,7 +47,7 @@ see that what I had would probably have issues.
 
 I did get as far as a KiCad PCB design, though:
 
-![The abandoned Solarpump v2]("/3dpics/solarpump 1.png")
+![The abandoned Solarpump v2](/3dpics/solarpump%201.png)
 
 ## Second build
 
@@ -58,6 +58,8 @@ Car Accessory connector, which was supposed to be helpful for a camping trip.
 
 For this version, a 3D CAD model was built in Blender 3D to verify the dimensions and
 fit.
+
+![Solar pump in its new box](/3dpics/Render_025123.png)
 
 
 ## Third design
