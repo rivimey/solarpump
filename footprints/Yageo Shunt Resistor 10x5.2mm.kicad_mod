@@ -1,0 +1,68 @@
+(footprint "Yageo Shunt Resistor 10x5.2mm" (version 20210606) (generator pcbnew) (layer "F.Cu")
+  (tedit 60D2427D)
+  (property "Sheetfile" "solarpump.kicad_sch")
+  (property "Sheetname" "")
+  (fp_text reference "R1" (at 0.1 -3.3 unlocked) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp d94ed97c-37a1-4fda-8957-253a51579ee0)
+  )
+  (fp_text value "R_Shunt" (at -0.1 4.8 unlocked) (layer "F.Fab")
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 63c7372e-db11-4d19-9459-295ffd7e46fe)
+  )
+  (fp_rect (start -5 -2.7) (end 5 2.55) (layer "F.SilkS") (width 0.12) (fill none) (tstamp 4c24ac45-a5db-4e35-91a5-3ab81bfeae76))
+  (fp_rect (start -6.1 -4) (end 6.1 3.9) (layer "F.CrtYd") (width 0.12) (fill none) (tstamp c0aecb75-c8f6-43ba-8aa3-08cf0a1a97c6))
+  (pad "1" smd custom (at -3.8 -1.85) (size 2.75 2.5) (layers "F.Cu" "F.Paste" "F.Mask")
+    (clearance 0.01)
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 29735af3-55d9-4eab-985b-9cdcd0ae5947))
+  (pad "1" smd custom (at -3.8 1.85) (size 2.75 2.5) (layers "F.Cu" "F.Paste" "F.Mask")
+    (clearance 0.01)
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp d066193f-561d-49ce-8725-fc3b000aa3ab))
+  (pad "1" smd custom (at -4.425 0) (size 1.5 1.25) (layers "F.Cu" "F.Paste" "F.Mask")
+    (clearance 0.01)
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp e2ceea3a-3388-4e67-ad05-40bbc98b8b30))
+  (pad "2" smd rect (at -2.75 0) (size 1.75 1) (layers "F.Cu" "F.Paste" "F.Mask")
+    (clearance 0.01) (tstamp 6f94eab8-f273-408e-84d0-4968925e3b68))
+  (pad "3" smd rect (at 2.75 0) (size 1.75 1) (layers "F.Cu" "F.Paste" "F.Mask")
+    (clearance 0.01) (tstamp 914cd074-e00b-4e2b-a1a2-365608eefd17))
+  (pad "4" smd custom (at 4.425 0) (size 1.5 1.25) (layers "F.Cu" "F.Paste" "F.Mask")
+    (clearance 0.01)
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 5b3afdf6-8759-4abb-844f-a1a2e7ea3519))
+  (pad "4" smd custom (at 3.8 1.85) (size 2.75 2.5) (layers "F.Cu" "F.Paste" "F.Mask")
+    (clearance 0.01)
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp a6a9e040-e389-4d7c-92bd-b08df8e56164))
+  (pad "4" smd custom (at 3.8 -1.85) (size 2.75 2.5) (layers "F.Cu" "F.Paste" "F.Mask")
+    (clearance 0.01)
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp f9841838-6009-4f28-b8e9-f8508dcd1b93))
+  (group "" (id 7f5fdd41-54a0-42ff-8266-ed2e296a179f)
+    (members
+      5b3afdf6-8759-4abb-844f-a1a2e7ea3519
+      a6a9e040-e389-4d7c-92bd-b08df8e56164
+      f9841838-6009-4f28-b8e9-f8508dcd1b93
+    )
+  )
+  (group "" (id 965ea4cb-749b-4e85-bb1b-3d4aaa212d1e)
+    (members
+      29735af3-55d9-4eab-985b-9cdcd0ae5947
+      d066193f-561d-49ce-8725-fc3b000aa3ab
+      e2ceea3a-3388-4e67-ad05-40bbc98b8b30
+    )
+  )
+  (model "${KIPRJMOD}/CSS2H-3920.stp"
+    (offset (xyz 5 2.6 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 90 180 0))
+  )
+)

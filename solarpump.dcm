@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SW_SPST_LED_3PIN
+D Single Pole Single Throw (SPST) switch with LED, generic
+K switch SPST LED OFF-ON
+F ~
+$ENDCMP
+#
+#End Doc Library

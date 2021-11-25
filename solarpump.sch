@@ -1,0 +1,649 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L solarpump:SW_SPST_LED_3PIN SW1
+U 1 1 60848048
+P 3500 3050
+F 0 "SW1" H 3400 2950 50  0000 L CNN
+F 1 "SPST Yellow LED 20A" H 3150 3200 50  0000 L CNN
+F 2 "solarpump:WIRES_3" H 3500 3050 50  0001 C CNN
+F 3 "~" H 3500 3050 50  0001 C CNN
+	1    3500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L solarpump:SW_SPST_LED_3PIN SW3
+U 1 1 60848446
+P 7700 3500
+F 0 "SW3" H 7700 3700 50  0000 C CNN
+F 1 "SPST Green LED 20A" H 7700 3600 50  0000 C CNN
+F 2 "solarpump:WIRES_3" H 7700 3500 50  0001 C CNN
+F 3 "~" H 7700 3500 50  0001 C CNN
+	1    7700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 60848D9D
+P 2700 4600
+F 0 "BT1" H 2808 4646 50  0000 L CNN
+F 1 "Battery" H 2808 4555 50  0000 L CNN
+F 2 "solarpump:WIRES_2" V 2700 4660 50  0001 C CNN
+F 3 "~" V 2700 4660 50  0001 C CNN
+	1    2700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Voltmeter_DC MES1
+U 1 1 608496B5
+P 6100 6800
+F 0 "MES1" H 5750 6850 50  0000 L CNN
+F 1 "Voltmeter_DC" H 5450 6750 50  0000 L CNN
+F 2 "" V 6100 6900 50  0001 C CNN
+F 3 "~" V 6100 6900 50  0001 C CNN
+	1    6100 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_DC_ALT M1
+U 1 1 6084A6FF
+P 10600 3850
+F 0 "M1" H 10747 3846 50  0000 L CNN
+F 1 "Motor_DC_ALT" H 10747 3755 50  0000 L CNN
+F 2 "" H 10600 3760 50  0001 C CNN
+F 3 "~" H 10600 3760 50  0001 C CNN
+	1    10600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cells SC1
+U 1 1 6084AFCC
+P 750 3350
+F 0 "SC1" H 858 3396 50  0000 L CNN
+F 1 "Solar_Cells" H 858 3305 50  0000 L CNN
+F 2 "" V 750 3410 50  0001 C CNN
+F 3 "~" V 750 3410 50  0001 C CNN
+	1    750  3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:XLR3 J1
+U 1 1 6084F788
+P 1650 3400
+F 0 "J1" V 1696 3628 50  0000 L CNN
+F 1 "XLR3 Female Line" V 1950 2650 50  0000 L CNN
+F 2 "" H 1650 3400 50  0001 C CNN
+F 3 " ~" H 1650 3400 50  0001 C CNN
+	1    1650 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 60868245
+P 4100 3050
+F 0 "F1" V 3903 3050 50  0000 C CNN
+F 1 "10A" V 3994 3050 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_OGN-SMD_Horizontal_Open" V 4030 3050 50  0001 C CNN
+F 3 "~" H 4100 3050 50  0001 C CNN
+	1    4100 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 3050 3950 3050
+Wire Wire Line
+	4250 3050 4900 3050
+Wire Wire Line
+	4900 3050 4900 3550
+Wire Notes Line
+	2000 3450 2350 3450
+Wire Notes Line
+	2000 3350 2350 3350
+Wire Wire Line
+	2700 3100 2700 3050
+Wire Wire Line
+	2700 3050 3300 3050
+Wire Wire Line
+	1650 3100 750  3100
+Wire Wire Line
+	750  3100 750  3150
+Wire Wire Line
+	750  3550 750  3700
+Wire Wire Line
+	750  3700 1650 3700
+Wire Wire Line
+	7500 3500 7350 3500
+Wire Wire Line
+	7050 3500 6950 3500
+Wire Wire Line
+	6950 3500 6950 3850
+$Comp
+L Connector:XLR3 J2
+U 1 1 60846FBC
+P 2700 3400
+F 0 "J2" V 2746 3628 50  0000 L CNN
+F 1 "XLR3 Male PCB" V 2450 3500 50  0000 L CNN
+F 2 "solarpump:WIRES_2" H 2700 3400 50  0001 C CNN
+F 3 " ~" H 2700 3400 50  0001 C CNN
+	1    2700 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 3800 2700 3700
+NoConn ~ 1950 3400
+NoConn ~ 3000 3400
+Wire Wire Line
+	9550 3750 9700 3750
+Wire Wire Line
+	9700 3750 9700 3650
+Wire Wire Line
+	9700 3550 10600 3550
+Wire Wire Line
+	10600 3550 10600 3650
+Wire Wire Line
+	9700 4050 9550 4050
+Wire Wire Line
+	10600 4150 10600 4200
+Text Notes 10650 3600 0    79   ~ 0
+Pump\nRated 6A\n12V
+Text Notes 550  3900 0    79   ~ 0
+60W 12-18V
+Text Notes 1450 4650 0    79   ~ 0
+Rated 7.2AH 12V
+Wire Wire Line
+	3650 3300 3650 3800
+Connection ~ 3650 3800
+Wire Wire Line
+	3650 3800 2700 3800
+Wire Wire Line
+	2700 5050 3650 5050
+Wire Wire Line
+	7850 3750 7850 4150
+Connection ~ 7850 4150
+$Comp
+L solarpump:SW_SPST_LED_3PIN SW2
+U 1 1 609D5AF7
+P 3500 4150
+F 0 "SW2" H 3400 4050 50  0000 L CNN
+F 1 "SPST Red LED 20A" H 3150 4300 50  0000 L CNN
+F 2 "solarpump:WIRES_3" H 3500 4150 50  0001 C CNN
+F 3 "~" H 3500 4150 50  0001 C CNN
+	1    3500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4400 3650 5050
+Connection ~ 3650 5050
+Wire Wire Line
+	3650 5050 5950 5050
+Wire Wire Line
+	2700 4800 2700 5050
+Wire Wire Line
+	2700 4400 2700 4150
+Text Notes 6700 950  0    79   ~ 0
+12V\nCharge/Load 10A\nMax solar: 160W
+$Comp
+L solarpump:PU1012EU CC1
+U 1 1 6085C39D
+P 5900 1150
+F 0 "CC1" H 5875 1765 50  0000 C CNN
+F 1 "PU1012EU" H 5875 1674 50  0000 C CNN
+F 2 "" H 5900 1150 50  0001 C CNN
+F 3 "" H 5900 1150 50  0001 C CNN
+	1    5900 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3550 5650 3350
+Wire Wire Line
+	5750 3350 5750 3800
+Wire Wire Line
+	5850 4150 5850 3350
+Wire Wire Line
+	6050 3350 6050 3550
+Wire Wire Line
+	6350 950  6600 950 
+Wire Wire Line
+	6600 950  6600 1900
+Wire Wire Line
+	6600 1900 6050 1900
+Wire Wire Line
+	5400 1500 5400 1900
+Wire Wire Line
+	5400 1900 5950 1900
+Wire Wire Line
+	5950 1900 5950 2250
+Wire Wire Line
+	5400 1350 5250 1350
+Wire Wire Line
+	5250 1350 5250 2000
+Wire Wire Line
+	5250 2000 5850 2000
+Wire Wire Line
+	5850 2000 5850 2250
+Wire Wire Line
+	5400 1050 5100 1050
+Wire Wire Line
+	5100 1050 5100 2100
+Wire Wire Line
+	5100 2100 5750 2100
+Wire Wire Line
+	5750 2100 5750 2250
+Wire Wire Line
+	5400 900  4950 900 
+Wire Wire Line
+	4950 900  4950 2250
+Wire Wire Line
+	4950 2250 5650 2250
+$Sheet
+S 1000 6700 900  850 
+U 60B3E08F
+F0 "Mechanical" 59
+F1 "Mechanical.sch" 59
+$EndSheet
+Wire Wire Line
+	8000 3500 8700 3500
+Wire Wire Line
+	7850 4150 8700 4150
+Wire Wire Line
+	8700 3500 8700 3650
+Wire Wire Line
+	8700 3750 8900 3750
+Wire Wire Line
+	8700 4050 8900 4050
+$Comp
+L Device:Thermistor TH1
+U 1 1 60BB6B91
+P 10200 3900
+F 0 "TH1" H 10250 3900 50  0000 L CNN
+F 1 "Thermistor" H 10000 4150 50  0000 L CNN
+F 2 "" H 10200 3900 50  0001 C CNN
+F 3 "~" H 10200 3900 50  0001 C CNN
+	1    10200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 3700 9950 3700
+Wire Wire Line
+	9950 3700 9950 3850
+Wire Wire Line
+	9950 3850 9550 3850
+Wire Wire Line
+	10200 4100 9950 4100
+Wire Wire Line
+	9950 4100 9950 3950
+Wire Wire Line
+	9950 3950 9550 3950
+Text Notes 6500 2150 0    79   ~ 0
+(wire)
+$Comp
+L Connector:Conn_01x10_Male J7
+U 1 1 60AA8CCE
+P 9100 4150
+F 0 "J7" H 9300 3500 50  0000 R CNN
+F 1 "Conn_01x10_Male" V 9150 3550 50  0000 R CNN
+F 2 "Connector_TE-Connectivity:TE_826576-9_1x09_P3.96mm_Vertical" H 9100 4150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/418/7/ENG_CD_1877285_D4-2021576.pdf" H 9100 4150 50  0001 C CNN
+F 4 "571-1877285-6" V 9100 4150 50  0001 C CNN "Mfr Part"
+	1    9100 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x10_Female J8
+U 1 1 60AA98CE
+P 9350 4150
+F 0 "J8" H 9300 3500 50  0000 R CNN
+F 1 "Conn_01x10_Female" V 9350 3550 50  0000 R CNN
+F 2 "" H 9350 4150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/418/6/ENG_CD_1123721_F2-2003211.pdf, https://www.mouser.co.uk/datasheet/2/418/7/ENG_CD_2132781_D1-2027552.pdf" H 9350 4150 50  0001 C CNN
+F 4 "571-2132781-6" H 9350 4150 50  0001 C CNN "Field4"
+	1    9350 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 3650 8700 3650
+Connection ~ 8700 3650
+Wire Wire Line
+	8700 3650 8700 3750
+Wire Wire Line
+	9550 3650 9700 3650
+Connection ~ 9700 3650
+Wire Wire Line
+	9700 3650 9700 3550
+Wire Wire Line
+	8900 4150 8700 4150
+Connection ~ 8700 4150
+Wire Wire Line
+	8700 4150 8700 4050
+Wire Wire Line
+	3650 3800 5750 3800
+Wire Wire Line
+	9700 4050 9700 4150
+Wire Wire Line
+	9550 4150 9700 4150
+Connection ~ 9700 4150
+Wire Wire Line
+	9700 4150 9700 4200
+Wire Wire Line
+	6500 2000 6500 1100
+Wire Wire Line
+	6500 1100 6350 1100
+Wire Wire Line
+	6250 2000 6350 2000
+Wire Wire Line
+	6350 1300 6900 1300
+Wire Wire Line
+	6350 1450 6900 1450
+Text Label 6900 1300 0    59   ~ 0
+USB5V
+Text Label 6900 1450 0    59   ~ 0
+USBGND
+$Comp
+L solarpump:RP2040 MCU1
+U 1 1 60AFA551
+P 7800 5800
+F 0 "MCU1" H 7500 5050 50  0000 C CNN
+F 1 "RP2040" H 8250 5050 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W25.4mm" H 7800 5800 50  0001 C CNN
+F 3 "" H 7800 5800 50  0001 C CNN
+	1    7800 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Shunt R3
+U 1 1 60B10824
+P 6550 3850
+F 0 "R3" V 6325 3850 50  0000 C CNN
+F 1 "0.01R" V 6416 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_Shunt_Vishay_WSR2_WSR3" V 6480 3850 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/427/wsl3637-1762603.pdf" H 6550 3850 50  0001 C CNN
+F 4 "WSL3637R0100FEA" V 6550 3850 50  0001 C CNN "Field4"
+	1    6550 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 3850 6750 3850
+Wire Wire Line
+	6050 4150 7850 4150
+Wire Wire Line
+	6850 4300 6850 5400
+$Comp
+L Device:R_Shunt R2
+U 1 1 60B3A09C
+P 5250 3550
+F 0 "R2" V 5025 3550 50  0000 C CNN
+F 1 "0.01R" V 5116 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_Shunt_Vishay_WSR2_WSR3" V 5180 3550 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/427/wsl3637-1762603.pdf" H 5250 3550 50  0001 C CNN
+F 4 "WSL3637R0100FEA" V 5250 3550 50  0001 C CNN "Field4"
+	1    5250 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 3550 4900 3550
+Wire Wire Line
+	5450 3550 5650 3550
+Wire Wire Line
+	6850 5400 7100 5400
+Wire Wire Line
+	6800 5500 7100 5500
+Wire Wire Line
+	5150 3700 5150 4650
+Wire Wire Line
+	5150 4650 6500 4650
+Wire Wire Line
+	6500 4650 6500 5800
+Wire Wire Line
+	6500 5800 7100 5800
+Wire Wire Line
+	7100 5700 6550 5700
+Wire Wire Line
+	6550 5700 6550 4550
+Wire Wire Line
+	6550 4550 5350 4550
+Wire Wire Line
+	5350 4550 5350 3700
+Text Label 7850 4450 0    59   ~ 0
+USBGND
+Text Label 7850 4600 0    59   ~ 0
+USB5V
+Wire Wire Line
+	7700 4450 7850 4450
+Wire Wire Line
+	7800 4600 7800 4700
+Wire Wire Line
+	7800 4600 7850 4600
+$Comp
+L Device:R_Shunt R1
+U 1 1 60BB07E7
+P 4650 4150
+F 0 "R1" V 4425 4150 50  0000 C CNN
+F 1 "0.01R" V 4516 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_Shunt_Vishay_WSR2_WSR3" V 4580 4150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/427/wsl3637-1762603.pdf" H 4650 4150 50  0001 C CNN
+F 4 "WSL3637R0100FEA" V 4650 4150 50  0001 C CNN "Field4"
+	1    4650 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 4150 4000 4150
+Wire Wire Line
+	5850 4150 4850 4150
+Wire Wire Line
+	4550 4300 4550 4950
+Wire Wire Line
+	4550 4950 6200 4950
+Wire Wire Line
+	6200 4950 6200 6100
+Wire Wire Line
+	6200 6100 7100 6100
+Wire Wire Line
+	7100 6000 6250 6000
+Wire Wire Line
+	6250 6000 6250 4850
+Wire Wire Line
+	6250 4850 4750 4850
+Wire Wire Line
+	4750 4850 4750 4300
+Wire Wire Line
+	6450 4000 6450 4350
+Wire Wire Line
+	6450 4350 6800 4350
+Wire Wire Line
+	6800 4350 6800 5500
+Wire Wire Line
+	6650 4000 6650 4300
+Wire Wire Line
+	6650 4300 6850 4300
+$Comp
+L Device:Fuse F2
+U 1 1 60BE9338
+P 4150 4150
+F 0 "F2" V 3953 4150 50  0000 C CNN
+F 1 "10A" V 4044 4150 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_OGN-SMD_Horizontal_Open" V 4080 4150 50  0001 C CNN
+F 3 "~" H 4150 4150 50  0001 C CNN
+	1    4150 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 3350 5950 5050
+$Comp
+L Device:Fuse F3
+U 1 1 60BF0B84
+P 7200 3500
+F 0 "F3" V 7003 3500 50  0000 C CNN
+F 1 "10A" V 7094 3500 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_OGN-SMD_Horizontal_Open" V 7130 3500 50  0001 C CNN
+F 3 "~" H 7200 3500 50  0001 C CNN
+	1    7200 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 4150 3300 4150
+Wire Wire Line
+	4300 4150 4450 4150
+Wire Wire Line
+	7700 4450 7700 4700
+Wire Wire Line
+	8900 3850 8500 3850
+Wire Wire Line
+	8500 3850 8500 5400
+Wire Wire Line
+	8500 5400 8300 5400
+Wire Wire Line
+	8300 5500 8550 5500
+Wire Wire Line
+	8550 5500 8550 3950
+Wire Wire Line
+	8550 3950 8900 3950
+Wire Wire Line
+	8300 5700 8600 5700
+Wire Wire Line
+	8600 5700 8600 4350
+Wire Wire Line
+	8600 4350 8900 4350
+Text Label 8800 4950 0    59   ~ 0
+USBGND
+$Comp
+L Connector:Conn_01x08_Male J6
+U 1 1 60C97F29
+P 6050 3150
+F 0 "J6" V 6050 2650 50  0000 R CNN
+F 1 "Conn_01x08_Male" V 5900 2600 50  0000 R CNN
+F 2 "Connector_TE-Connectivity:TE_826576-8_1x08_P3.96mm_Vertical" H 6050 3150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/418/7/ENG_CD_1877285_D4-2021576.pdf" H 6050 3150 50  0001 C CNN
+F 4 "571-1877285-8" V 6050 3150 50  0001 C CNN "Mfr Part"
+	1    6050 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J5
+U 1 1 60C985E0
+P 6050 2450
+F 0 "J5" V 6000 1950 50  0000 R CNN
+F 1 "Conn_01x08_Female" V 5950 1850 50  0000 R CNN
+F 2 "" H 6050 2450 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/418/6/ENG_CD_1123721_F2-2003211.pdf, https://www.mouser.co.uk/datasheet/2/418/7/ENG_CD_2132781_D1-2027552.pdf" H 6050 2450 50  0001 C CNN
+F 4 "571-2132781-6" H 6050 2450 50  0001 C CNN "Field4"
+	1    6050 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 4450 8650 4450
+Wire Wire Line
+	8650 4450 8650 5100
+Wire Wire Line
+	8650 5100 8800 5100
+Wire Wire Line
+	8900 4550 8700 4550
+Wire Wire Line
+	8700 4550 8700 4950
+Wire Wire Line
+	8700 4950 8800 4950
+Text Label 8800 5100 0    59   ~ 0
+USB5V
+Wire Wire Line
+	10600 4200 9700 4200
+$Comp
+L solarpump:FLOW S1
+U 1 1 60CEB109
+P 10600 4650
+F 0 "S1" H 10750 4750 59  0000 C CNN
+F 1 "FLOW" H 10500 4750 59  0000 C CNN
+F 2 "" H 10600 4650 59  0001 C CNN
+F 3 "" H 10600 4650 59  0001 C CNN
+	1    10600 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4550 9700 4900
+Wire Wire Line
+	9700 4900 10350 4900
+Wire Wire Line
+	10850 4800 10950 4800
+Wire Wire Line
+	10950 4800 10950 4350
+Wire Wire Line
+	9700 4550 9550 4550
+Wire Wire Line
+	9550 4450 9950 4450
+Wire Wire Line
+	9950 4450 9950 4700
+Wire Wire Line
+	9950 4700 10350 4700
+Wire Wire Line
+	9550 4350 10950 4350
+NoConn ~ 9550 4250
+NoConn ~ 8900 4250
+Wire Notes Line
+	10350 4000 10450 4000
+Wire Notes Line
+	10350 3800 10450 3800
+Text Notes 9550 3400 0    79   ~ 0
+(wire)
+Wire Notes Line
+	9200 2750 9200 6450
+Wire Notes Line
+	9200 6450 3250 6450
+Wire Notes Line
+	3250 6450 3250 2750
+Wire Notes Line
+	3250 2750 9200 2750
+Text Notes 3350 6350 0    79   ~ 0
+PCB
+Wire Wire Line
+	6050 1900 6050 2100
+Wire Wire Line
+	6150 2250 6150 2100
+Wire Wire Line
+	6150 2100 6050 2100
+Connection ~ 6050 2100
+Wire Wire Line
+	6050 2100 6050 2250
+Wire Wire Line
+	6250 2000 6250 2250
+Wire Wire Line
+	6350 2250 6350 2000
+Connection ~ 6350 2000
+Wire Wire Line
+	6350 2000 6500 2000
+Wire Wire Line
+	6250 3350 6250 3550
+Wire Wire Line
+	6250 3850 6350 3850
+Wire Wire Line
+	6350 3350 6350 3550
+Wire Wire Line
+	6350 3550 6250 3550
+Connection ~ 6250 3550
+Wire Wire Line
+	6250 3550 6250 3850
+Wire Wire Line
+	6150 3350 6150 3550
+Wire Wire Line
+	6150 3550 6050 3550
+Connection ~ 6050 3550
+Wire Wire Line
+	6050 3550 6050 4150
+Text Notes 3300 2850 0    39   ~ 0
+3x 4.8mm F spade
+Text Notes 7950 3600 0    39   ~ 0
+3x 4.8mm F spade
+Text Notes 3250 3950 0    39   ~ 0
+3x 4.8mm F spade
+Text Notes 2750 4450 0    39   ~ 0
+2x 4.8mm F spade
+$EndSCHEMATC

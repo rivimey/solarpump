@@ -1,0 +1,3020 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/ruth/solarpump v2/solarpump.kicad_sch</source>
+    <date>Thu 29 Jul 2021 18:44:50 BST</date>
+    <tool>Eeschema 5.99.0-unknown-d613292b67~131~ubuntu21.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Solar Pump Controller</title>
+        <company>IvimeyCom</company>
+        <rev>1.2</rev>
+        <date>2021-07-07</date>
+        <source>solarpump.kicad_sch</source>
+        <comment number="1" value="Design for Solar Panel driving 12V, 70W water pump with MCU monitoring"/>
+        <comment number="2" value="A. Overall Circuit"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/">
+      <title_block>
+        <title>Solar Pump Controller</title>
+        <company>IvimeyCom</company>
+        <rev>1.2</rev>
+        <date>2021-07-07</date>
+        <source>controller.kicad_sch</source>
+        <comment number="1" value="Design for Solar Panel driving 12V, 70W water pump with MCU monitoring"/>
+        <comment number="2" value="B. Microcontroller, Power monitor &amp; Display"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="+Bat2">
+      <value>Soldered</value>
+      <footprint>Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.3mm</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Female" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d95fcbb-f95b-4b8d-84be-4188b7f5fa44</tstamps>
+    </comp>
+    <comp ref="-Bat2">
+      <value>Soldered</value>
+      <footprint>Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.3mm</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Female" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f83d5800-8fbf-4bb8-8c74-cbc856ac81f7</tstamps>
+    </comp>
+    <comp ref="BT1">
+      <value>12v AGM 7.2AH</value>
+      <fields>
+        <field name="Description">Solar Main Charge battery</field>
+        <field name="Mfr Part">GP1272F2</field>
+        <field name="Part">632-GP1272F2</field>
+        <field name="Repr-Cost">20.00</field>
+      </fields>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <property name="Description" value="Solar Main Charge battery"/>
+      <property name="Mfr Part" value="GP1272F2"/>
+      <property name="Part" value="632-GP1272F2"/>
+      <property name="Repr-Cost" value="20.00"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000060848d9d</tstamps>
+    </comp>
+    <comp ref="BT2">
+      <value>LiPo Bat 3V7 300mA</value>
+      <fields>
+        <field name="Description">LiPo Backup battery, 100mAh - 300mAh eg. UDI
+Part Number: U846-06
+EAN: 5028967381944</field>
+        <field name="Mfr Name">UDI</field>
+        <field name="Mfr Part">U846-06</field>
+        <field name="Repr-Cost">4.00</field>
+      </fields>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <property name="Description" value="LiPo Backup battery, 100mAh - 300mAh eg. UDI&#xA;Part Number: U846-06&#xA;EAN: 5028967381944"/>
+      <property name="Mfr Name" value="UDI"/>
+      <property name="Mfr Part" value="U846-06"/>
+      <property name="Repr-Cost" value="4.00"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0bd3e5f2-32fd-46c9-9f80-45f37fa0e0d4</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>0.1uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Mfr Name">Kemet</field>
+        <field name="Mfr Part">A759KS107M1VAAE31 </field>
+        <field name="Part">80-A759KS107M1VAAE31 </field>
+        <field name="Repr-Cost">0.665</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfr Name" value="Kemet"/>
+      <property name="Mfr Part" value="A759KS107M1VAAE31 "/>
+      <property name="Part" value="80-A759KS107M1VAAE31 "/>
+      <property name="Repr-Cost" value="0.665"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4898dfb-523e-4a3e-8277-6470a8a8984b</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>0.1uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Mfr Name">Kemet</field>
+        <field name="Mfr Part">A759KS107M1VAAE31 </field>
+        <field name="Part">80-A759KS107M1VAAE31 </field>
+        <field name="Repr-Cost">0.665</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfr Name" value="Kemet"/>
+      <property name="Mfr Part" value="A759KS107M1VAAE31 "/>
+      <property name="Part" value="80-A759KS107M1VAAE31 "/>
+      <property name="Repr-Cost" value="0.665"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c02c5b25-cac7-479b-bedf-3cb6c30a1a5a</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>220uF 35V</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <fields>
+        <field name="Mfr Name">Kemet</field>
+        <field name="Mfr Part">ESY227M035AG8AA </field>
+        <field name="Part">80-ESY227M035AG8AA </field>
+        <field name="Repr-Cost">0.30</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <property name="Part" value="80-ESY227M035AG8AA "/>
+      <property name="Mfr Name" value="Kemet"/>
+      <property name="Mfr Part" value="ESY227M035AG8AA "/>
+      <property name="Repr-Cost" value="0.30"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46ad35e5-1870-478e-968d-1144227c1b88</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>220uF 35V</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <fields>
+        <field name="Mfr Name">Kemet</field>
+        <field name="Mfr Part">ESY227M035AG8AA </field>
+        <field name="Part">80-ESY227M035AG8AA </field>
+        <field name="Repr-Cost">0.30</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <property name="Part" value="80-ESY227M035AG8AA "/>
+      <property name="Mfr Name" value="Kemet"/>
+      <property name="Mfr Part" value="ESY227M035AG8AA "/>
+      <property name="Repr-Cost" value="0.30"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca96c1e0-e48d-40eb-9f1e-08b7ff4bf55f</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>DSS20-0015B</value>
+      <footprint>Package_TO_SOT_THT:TO-220-2_Vertical</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/240/L234-1547539.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">IXYS</field>
+        <field name="Mfr Part">DSS20-0015B</field>
+        <field name="Part">747-DSS20-0015B</field>
+        <field name="Repr-Cost">1.41</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_ALT" description="Schottky diode, filled shape"/>
+      <property name="Mfr Name" value="IXYS"/>
+      <property name="Mfr Part" value="DSS20-0015B"/>
+      <property name="Part" value="747-DSS20-0015B"/>
+      <property name="Repr-Cost" value="1.41"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ded5dccf-fa94-452e-96ea-2e9ec2d17a33</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Mfr Part">1N4148TR</field>
+        <field name="Part">512-1N4148TR</field>
+        <field name="Repr-Cost">0.08</field>
+      </fields>
+      <libsource lib="Device" part="D_ALT" description="Diode, filled shape"/>
+      <property name="Mfr Part" value="1N4148TR"/>
+      <property name="Part" value="512-1N4148TR"/>
+      <property name="Repr-Cost" value="0.08"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>abddee2d-9005-4c99-b5ef-ee37decdfbd6</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>1N4934-E3</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/427/1n4933-1768094.pdf</datasheet>
+      <fields>
+        <field name="Repr-Cost">0.20</field>
+      </fields>
+      <libsource lib="Device" part="D_ALT" description="Diode, filled shape"/>
+      <property name="Repr-Cost" value="0.20"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>01718768-7031-4063-b406-4844ed3f4ce8</tstamps>
+    </comp>
+    <comp ref="HS_Q1">
+      <value>H/S</value>
+      <footprint>solarpump:Heatsink_14x9.5mm</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/433/286-844355.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Wakefield-Vette</field>
+        <field name="Mfr Part">286-AB</field>
+        <field name="Part">567-286-AB</field>
+        <field name="Repr-Cost">0.435</field>
+      </fields>
+      <libsource lib="Mechanical" part="Heatsink" description="Heatsink"/>
+      <property name="Mfr Name" value="Wakefield-Vette"/>
+      <property name="Mfr Part" value="286-AB"/>
+      <property name="Part" value="567-286-AB"/>
+      <property name="Repr-Cost" value="0.435"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb2f1866-4bab-4a54-9dc8-5c5459271353</tstamps>
+    </comp>
+    <comp ref="HS_Q4">
+      <value>H/S</value>
+      <footprint>solarpump:Heatsink_14x9.5mm</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/433/286-844355.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Wakefield-Vette</field>
+        <field name="Mfr Part">286-AB</field>
+        <field name="Part">567-286-AB</field>
+        <field name="Repr-Cost">0.435</field>
+      </fields>
+      <libsource lib="Mechanical" part="Heatsink" description="Heatsink"/>
+      <property name="Mfr Name" value="Wakefield-Vette"/>
+      <property name="Mfr Part" value="286-AB"/>
+      <property name="Part" value="567-286-AB"/>
+      <property name="Repr-Cost" value="0.435"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca811e3c-a3e8-41f7-941f-f7183abf8de3</tstamps>
+    </comp>
+    <comp ref="HS_Q5">
+      <value>H/S</value>
+      <footprint>solarpump:Heatsink_14x9.5mm</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/433/286-844355.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Wakefield-Vette</field>
+        <field name="Mfr Part">286-AB</field>
+        <field name="Part">567-286-AB</field>
+        <field name="Repr-Cost">0.435</field>
+      </fields>
+      <libsource lib="Mechanical" part="Heatsink" description="Heatsink"/>
+      <property name="Mfr Name" value="Wakefield-Vette"/>
+      <property name="Mfr Part" value="286-AB"/>
+      <property name="Part" value="567-286-AB"/>
+      <property name="Repr-Cost" value="0.435"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bdc87368-72be-4740-8a70-d5cd65865692</tstamps>
+    </comp>
+    <comp ref="HS_Q7">
+      <value>H/S</value>
+      <footprint>solarpump:Heatsink_14x9.5mm</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/433/286-844355.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Wakefield-Vette</field>
+        <field name="Mfr Part">286-AB</field>
+        <field name="Part">567-286-AB</field>
+        <field name="Repr-Cost">0.435</field>
+      </fields>
+      <libsource lib="Mechanical" part="Heatsink" description="Heatsink"/>
+      <property name="Mfr Name" value="Wakefield-Vette"/>
+      <property name="Mfr Part" value="286-AB"/>
+      <property name="Part" value="567-286-AB"/>
+      <property name="Repr-Cost" value="0.435"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a5ed0d61-cd19-4b8d-b0a5-13240e3c8f6c</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>XLR3 Female Line</value>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006084f788</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>XLR3 Male PCB</value>
+      <footprint>Connector_Audio:Jack_XLR_Neutrik_NC3FAAH-0_Horizontal</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/289/nc3faah-1853093.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Neutrik</field>
+        <field name="Mfr Part">NC3FAAH</field>
+        <field name="Part">568-NC3FAAH</field>
+        <field name="Repr-Cost">0.752</field>
+      </fields>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <property name="Mfr Name" value="Neutrik"/>
+      <property name="Mfr Part" value="NC3FAAH"/>
+      <property name="Part" value="568-NC3FAAH"/>
+      <property name="Repr-Cost" value="0.752"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000060846fbc</tstamps>
+    </comp>
+    <comp ref="J9">
+      <value>XLR3 Male PCB</value>
+      <footprint>Connector_Audio:Jack_XLR_Neutrik_NC3FAAH-0_Horizontal</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/289/nc3faah-1853093.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Neutrik</field>
+        <field name="Mfr Part">NC3FAAH</field>
+        <field name="Part">568-NC3FAAH</field>
+        <field name="Repr-Cost">0.752</field>
+      </fields>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <property name="Mfr Name" value="Neutrik"/>
+      <property name="Mfr Part" value="NC3FAAH"/>
+      <property name="Part" value="568-NC3FAAH"/>
+      <property name="Repr-Cost" value="0.752"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2c101d45-67d3-4c68-9514-c715f532c906</tstamps>
+    </comp>
+    <comp ref="J10">
+      <value>MotorSens_M</value>
+      <footprint>Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/418/7/ENG_CD_1877285_D4-2021613.pdf</datasheet>
+      <fields>
+        <field name="Mfr Part">1877285-8</field>
+        <field name="Part">571-1877285-8</field>
+        <field name="Repr-Cost">0.55</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Mfr Part" value="1877285-8"/>
+      <property name="Part" value="571-1877285-8"/>
+      <property name="Repr-Cost" value="0.55"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>472fee07-6416-499c-a365-bd3104c92a42</tstamps>
+    </comp>
+    <comp ref="J11">
+      <value>MotorPowr_M</value>
+      <footprint>Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical</footprint>
+      <fields>
+        <field name="Mfr Name">PhoenixContact</field>
+        <field name="Mfr Part">1713148</field>
+        <field name="Part">651-1713148 </field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Mfr Part" value="1713148"/>
+      <property name="Mfr Name" value="PhoenixContact"/>
+      <property name="Part" value="651-1713148 "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000060aa8cce</tstamps>
+    </comp>
+    <comp ref="J14">
+      <value>MotorPowr_F</value>
+      <fields>
+        <field name="Description">Pluggable Terminal Blocks 3.50MM EURO PLUG VER G VERT RWE GRN 2CKT</field>
+        <field name="Mfr Name">Molex</field>
+        <field name="Mfr Part">39503-7002</field>
+        <field name="Part">538-39503-7002</field>
+        <field name="Repr-Cost">0.80</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Female" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Field4" value=""/>
+      <property name="Mfr Part" value="39503-7002"/>
+      <property name="Description" value="Pluggable Terminal Blocks 3.50MM EURO PLUG VER G VERT RWE GRN 2CKT"/>
+      <property name="Mfr Name" value="Molex"/>
+      <property name="Part" value="538-39503-7002"/>
+      <property name="Repr-Cost" value="0.80"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000060aa98ce</tstamps>
+    </comp>
+    <comp ref="J15">
+      <value>MotorSens_F</value>
+      <fields>
+        <field name="Description">Pluggable Terminal Blocks 3.50MM EURO PLUG VER G VERT RWE GRN 10CKT</field>
+        <field name="Mfr Name">Molex</field>
+        <field name="Mfr Part">39503-7010</field>
+        <field name="Part">538-39503-7010</field>
+        <field name="Repr-Cost">2.75</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x06_Female" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Field4" value=""/>
+      <property name="Mfr Part" value="39503-7010"/>
+      <property name="Description" value="Pluggable Terminal Blocks 3.50MM EURO PLUG VER G VERT RWE GRN 10CKT"/>
+      <property name="Mfr Name" value="Molex"/>
+      <property name="Part" value="538-39503-7010"/>
+      <property name="Repr-Cost" value="2.75"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e775f2a4-e617-40b7-80a8-c4b5ce1785d8</tstamps>
+    </comp>
+    <comp ref="J18">
+      <value>2 pin header</value>
+      <footprint>Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical</footprint>
+      <fields>
+        <field name="Part">571-1877285-2</field>
+        <field name="Repr-Cost">0.25</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Part" value="571-1877285-2"/>
+      <property name="Repr-Cost" value="0.25"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e79b719-f8d2-45d0-b5f0-44f59d816d41</tstamps>
+    </comp>
+    <comp ref="J19">
+      <value>2 pin ln/skt</value>
+      <libsource lib="Connector" part="Conn_01x02_Female" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab90ba8d-d0e2-4099-af8a-d4adb64e5cbe</tstamps>
+    </comp>
+    <comp ref="J20">
+      <value>XLR3 Female Line</value>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb3774f7-ed4a-482f-96cb-04f4822db4a7</tstamps>
+    </comp>
+    <comp ref="JP3">
+      <value>Disable Q5 (NC)</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm</footprint>
+      <libsource lib="Device" part="Jumper_NC_Small" description="Jumper, normally closed, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>acfcda69-28a8-48b8-ac05-91d1408f48e1</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>33uH</value>
+      <footprint>Inductor_THT:L_Toroid_Vertical_L17.8mm_W8.1mm_P7.62mm_Bourns_5700</footprint>
+      <libsource lib="Device" part="L_Core_Iron" description="Inductor with iron core"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>75e4a54a-ca2c-4a70-a3ce-6041d7ddbb46</tstamps>
+    </comp>
+    <comp ref="M1">
+      <value>Motor_DC_ALT</value>
+      <libsource lib="Motor" part="Motor_DC_ALT" description="DC Motor, alternative symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006084a6ff</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>IRLB8721PBF</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/196/Infineon_IRLB8721_DataSheet_v01_01_EN-1228534.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Infineon</field>
+        <field name="Mfr Part">IRLB8721PBF</field>
+        <field name="Part">942-IRLB8721PBF</field>
+        <field name="Repr-Cost">0.793</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="IRLZ34N" description="30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB"/>
+      <property name="Mfr Name" value="Infineon"/>
+      <property name="Mfr Part" value="IRLB8721PBF"/>
+      <property name="Part" value="942-IRLB8721PBF"/>
+      <property name="Repr-Cost" value="0.793"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e847475e-a776-455f-9b0f-39db47f3a4f5</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>2N3904</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://my.centralsemi.com/datasheets/2N3903.PDF</datasheet>
+      <fields>
+        <field name="Description">Gen Purpose BJT NPN transistor T0-92</field>
+        <field name="Mfr Name">Central Semi</field>
+        <field name="Mfr Part">2N3904</field>
+        <field name="Part">610-2N3904</field>
+        <field name="Repr-Cost">0.35</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
+      <property name="Mfr Name" value="Central Semi"/>
+      <property name="Mfr Part" value="2N3904"/>
+      <property name="Part" value="610-2N3904"/>
+      <property name="Repr-Cost" value="0.35"/>
+      <property name="Description" value="Gen Purpose BJT NPN transistor T0-92"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72199932-286f-4517-ab7c-36941a3554ed</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>2N3904</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://my.centralsemi.com/datasheets/2N3903.PDF</datasheet>
+      <fields>
+        <field name="Description">Gen Purpose BJT NPN transistor T0-92</field>
+        <field name="Mfr Name">Central Semi</field>
+        <field name="Mfr Part">2N3904</field>
+        <field name="Part">610-2N3904</field>
+        <field name="Repr-Cost">0.35</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
+      <property name="Mfr Name" value="Central Semi"/>
+      <property name="Mfr Part" value="2N3904"/>
+      <property name="Part" value="610-2N3904"/>
+      <property name="Repr-Cost" value="0.35"/>
+      <property name="Description" value="Gen Purpose BJT NPN transistor T0-92"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f35c1e6-fabb-4707-80b6-3fb3d53f3608</tstamps>
+    </comp>
+    <comp ref="Q4">
+      <value>IRLB8721PBF</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/196/Infineon_IRLB8721_DataSheet_v01_01_EN-1228534.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Infineon</field>
+        <field name="Mfr Part">IRLB8721PBF</field>
+        <field name="Part">942-IRLB8721PBF</field>
+        <field name="Repr-Cost">0.793</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="IRLZ34N" description="30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB"/>
+      <property name="Mfr Name" value="Infineon"/>
+      <property name="Mfr Part" value="IRLB8721PBF"/>
+      <property name="Part" value="942-IRLB8721PBF"/>
+      <property name="Repr-Cost" value="0.793"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee629d95-524a-420e-b2f9-ad837c0d4948</tstamps>
+    </comp>
+    <comp ref="Q5">
+      <value>IRLB8721PBF</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/196/Infineon_IRLB8721_DataSheet_v01_01_EN-1228534.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Infineon</field>
+        <field name="Mfr Part">IRLB8721PBF</field>
+        <field name="Part">942-IRLB8721PBF</field>
+        <field name="Repr-Cost">0.793</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="IRLZ34N" description="30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB"/>
+      <property name="Mfr Name" value="Infineon"/>
+      <property name="Mfr Part" value="IRLB8721PBF"/>
+      <property name="Part" value="942-IRLB8721PBF"/>
+      <property name="Repr-Cost" value="0.793"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4f10d29-774a-4fef-addb-f04ebe1ae6fc</tstamps>
+    </comp>
+    <comp ref="Q6">
+      <value>2N3904</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://my.centralsemi.com/datasheets/2N3903.PDF</datasheet>
+      <fields>
+        <field name="Description">Gen Purpose BJT NPN transistor T0-92</field>
+        <field name="Mfr Name">Central Semi</field>
+        <field name="Mfr Part">2N3904</field>
+        <field name="Part">610-2N3904</field>
+        <field name="Repr-Cost">0.35</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
+      <property name="Mfr Name" value="Central Semi"/>
+      <property name="Mfr Part" value="2N3904"/>
+      <property name="Part" value="610-2N3904"/>
+      <property name="Repr-Cost" value="0.35"/>
+      <property name="Description" value="Gen Purpose BJT NPN transistor T0-92"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c3d364bb-4b9e-4ad4-be08-e8360b102120</tstamps>
+    </comp>
+    <comp ref="Q7">
+      <value>IRLB8721PBF</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/196/Infineon_IRLB8721_DataSheet_v01_01_EN-1228534.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Infineon</field>
+        <field name="Mfr Part">IRLB8721PBF</field>
+        <field name="Part">942-IRLB8721PBF</field>
+        <field name="Repr-Cost">0.793</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="IRLZ34N" description="30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB"/>
+      <property name="Mfr Name" value="Infineon"/>
+      <property name="Mfr Part" value="IRLB8721PBF"/>
+      <property name="Part" value="942-IRLB8721PBF"/>
+      <property name="Repr-Cost" value="0.793"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec641a56-d01e-4241-a066-e4f7de3a9f7d</tstamps>
+    </comp>
+    <comp ref="Q8">
+      <value>2N3904</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://my.centralsemi.com/datasheets/2N3903.PDF</datasheet>
+      <fields>
+        <field name="Description">Gen Purpose BJT NPN transistor T0-92</field>
+        <field name="Mfr Name">Central Semi</field>
+        <field name="Mfr Part">2N3904</field>
+        <field name="Part">610-2N3904</field>
+        <field name="Repr-Cost">0.35</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
+      <property name="Mfr Name" value="Central Semi"/>
+      <property name="Mfr Part" value="2N3904"/>
+      <property name="Part" value="610-2N3904"/>
+      <property name="Repr-Cost" value="0.35"/>
+      <property name="Description" value="Gen Purpose BJT NPN transistor T0-92"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8543fa5b-c34f-4818-9507-bc6691a7a67e</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb927a2d-95ad-4eea-869d-c4914abe2c02</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>3mOhm, 1W</value>
+      <footprint>solarpump:Yageo Shunt Resistor 10x5.2mm</footprint>
+      <datasheet>https://www.vishay.com/doc?30332</datasheet>
+      <fields>
+        <field name="Description">3mOhm, 1W</field>
+        <field name="Mfr Name">Vishay</field>
+        <field name="Mfr Part">WSKW06123L000FEA</field>
+        <field name="Part">71-WSKW06123L000FEA</field>
+        <field name="Repr-Cost">0.49</field>
+      </fields>
+      <libsource lib="Device" part="R_Shunt" description="Shunt resistor"/>
+      <property name="Description" value="3mOhm, 1W"/>
+      <property name="Mfr Name" value="Vishay"/>
+      <property name="Mfr Part" value="WSKW06123L000FEA"/>
+      <property name="Part" value="71-WSKW06123L000FEA"/>
+      <property name="Repr-Cost" value="0.49"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f02e4226-8af7-4c01-bb04-bfc8e199e313</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>3mOhm, 1W</value>
+      <footprint>solarpump:Yageo Shunt Resistor 10x5.2mm</footprint>
+      <datasheet>https://www.vishay.com/doc?30332</datasheet>
+      <fields>
+        <field name="Description">3mOhm, 1W</field>
+        <field name="Mfr Name">Vishay</field>
+        <field name="Mfr Part">WSKW06123L000FEA</field>
+        <field name="Part">71-WSKW06123L000FEA</field>
+        <field name="Repr-Cost">0.49</field>
+      </fields>
+      <libsource lib="Device" part="R_Shunt" description="Shunt resistor"/>
+      <property name="Description" value="3mOhm, 1W"/>
+      <property name="Mfr Name" value="Vishay"/>
+      <property name="Mfr Part" value="WSKW06123L000FEA"/>
+      <property name="Part" value="71-WSKW06123L000FEA"/>
+      <property name="Repr-Cost" value="0.49"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4eea3bd-e181-4276-a145-052619a71c29</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b974ed76-8d74-4f20-a897-efb841af05e5</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/2W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-220R </field>
+        <field name="Part">603-CFR-50JR-52-220R </field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/2W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-220R "/>
+      <property name="Part" value="603-CFR-50JR-52-220R "/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6ddd8f8c-3ed3-471b-927d-5105df3d27e9</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>3mOhm, 1W</value>
+      <footprint>solarpump:Yageo Shunt Resistor 10x5.2mm</footprint>
+      <datasheet>https://www.vishay.com/doc?30332</datasheet>
+      <fields>
+        <field name="Description">3mOhm, 1W</field>
+        <field name="Mfr Name">Vishay</field>
+        <field name="Mfr Part">WSKW06123L000FEA</field>
+        <field name="Part">71-WSKW06123L000FEA</field>
+        <field name="Repr-Cost">0.49</field>
+      </fields>
+      <libsource lib="Device" part="R_Shunt" description="Shunt resistor"/>
+      <property name="Description" value="3mOhm, 1W"/>
+      <property name="Mfr Name" value="Vishay"/>
+      <property name="Mfr Part" value="WSKW06123L000FEA"/>
+      <property name="Part" value="71-WSKW06123L000FEA"/>
+      <property name="Repr-Cost" value="0.49"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0cc0c16-1082-4e3c-a828-1594bd121f7e</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e17d8380-2084-457e-92b1-fed9d0253af5</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39e5491f-84d6-48c7-bc69-34128ac3cce4</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec74573f-41a3-44cb-86e3-3ba3ad05b963</tstamps>
+    </comp>
+    <comp ref="R26">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a00db30c-1654-4c4f-9d20-e160b06598a9</tstamps>
+    </comp>
+    <comp ref="R28">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b72431cb-15d2-4895-8533-ebdf38bac183</tstamps>
+    </comp>
+    <comp ref="R29">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3aa7426-416e-4036-aa5d-c0851f6ed2ac</tstamps>
+    </comp>
+    <comp ref="S1">
+      <value>FLOW</value>
+      <libsource lib="solarpump" part="FLOW" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000060ceb109</tstamps>
+    </comp>
+    <comp ref="SC1">
+      <value>Solar_Cells</value>
+      <libsource lib="Device" part="Solar_Cells" description="Multiple solar cells"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006084afcc</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>Power On</value>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/833/Pushbutton_KF_Datasheet_08_11_17-2079774.pdf</datasheet>
+      <fields>
+        <field name="Mfr Part">KFB2DNA1BBB</field>
+        <field name="Part">540-KFB2DNA1BBB</field>
+        <field name="Repr-Cost">3.11</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Mfr Part" value="KFB2DNA1BBB"/>
+      <property name="Part" value="540-KFB2DNA1BBB"/>
+      <property name="Repr-Cost" value="3.11"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6c850e5-bb27-45c2-b1bf-1a904e7ac1e5</tstamps>
+    </comp>
+    <comp ref="TH1">
+      <value>ED2F103A2-71041</value>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/362/P12_13_AT_Thermistor-2320347.pdf</datasheet>
+      <fields>
+        <field name="Description">NTC (Negative Temperature Coefficient) Thermistors AT-4 Shape 2 26AWG 55mm</field>
+        <field name="Mfr Name">Semitec</field>
+        <field name="Mfr Part">ED2F103A2-71041</field>
+        <field name="Part">954-ED2F103A2-71041</field>
+        <field name="Repr-Cost">1.03</field>
+      </fields>
+      <libsource lib="Device" part="Thermistor" description="Temperature dependent resistor"/>
+      <property name="Mfr Name" value="Semitec"/>
+      <property name="Mfr Part" value="ED2F103A2-71041"/>
+      <property name="Part" value="954-ED2F103A2-71041"/>
+      <property name="Description" value="NTC (Negative Temperature Coefficient) Thermistors AT-4 Shape 2 26AWG 55mm"/>
+      <property name="Repr-Cost" value="1.03"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a76ee90b-e0a3-4592-9c17-c37d0138c33b</tstamps>
+    </comp>
+    <comp ref="TH2">
+      <value>ED2F103A2-71041</value>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/362/P12_13_AT_Thermistor-2320347.pdf</datasheet>
+      <fields>
+        <field name="Description">NTC (Negative Temperature Coefficient) Thermistors AT-4 Shape 2 26AWG 55mm</field>
+        <field name="Mfr Name">Semitec</field>
+        <field name="Mfr Part">ED2F103A2-71041</field>
+        <field name="Part">954-ED2F103A2-71041</field>
+        <field name="Repr-Cost">1.03</field>
+      </fields>
+      <libsource lib="Device" part="Thermistor" description="Temperature dependent resistor"/>
+      <property name="Mfr Name" value="Semitec"/>
+      <property name="Mfr Part" value="ED2F103A2-71041"/>
+      <property name="Part" value="954-ED2F103A2-71041"/>
+      <property name="Description" value="NTC (Negative Temperature Coefficient) Thermistors AT-4 Shape 2 26AWG 55mm"/>
+      <property name="Repr-Cost" value="1.03"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000060bb6b91</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>IR2104</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm_LongPads</footprint>
+      <datasheet>https://www.infineon.com/dgdl/ir2104.pdf?fileId=5546d462533600a4015355c7c1c31671</datasheet>
+      <fields>
+        <field name="Description">Gate Drivers Hlf Brdg Drvr 1 Inpt &amp; sd</field>
+        <field name="Mfr Part">IR2104PBF</field>
+        <field name="Part">942-IR2104PBF</field>
+        <field name="Repr-Cost">2.11</field>
+      </fields>
+      <libsource lib="Driver_FET" part="IR2104" description="Half-Bridge Driver, 600V, 210/360mA, PDIP-8/SOIC-8"/>
+      <property name="Description" value="Gate Drivers Hlf Brdg Drvr 1 Inpt &amp; sd"/>
+      <property name="Mfr Part" value="IR2104PBF"/>
+      <property name="Part" value="942-IR2104PBF"/>
+      <property name="Repr-Cost" value="2.11"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d76ffd1-5969-4e94-aa7f-7751146d1727</tstamps>
+    </comp>
+    <comp ref="U1_C1">
+      <value>0.1uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">TDK</field>
+        <field name="Mfr Part">FG28X7R1H104KNT6</field>
+        <field name="Part">810-FG28X7R1H104KNT6</field>
+        <field name="Repr-Cost">0.665</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfr Name" value="TDK"/>
+      <property name="Mfr Part" value="FG28X7R1H104KNT6"/>
+      <property name="Part" value="810-FG28X7R1H104KNT6"/>
+      <property name="Repr-Cost" value="0.665"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca79b4c2-0ea7-4ecc-b52b-5547631dd438</tstamps>
+    </comp>
+    <comp ref="U1_C2">
+      <value>10uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">TDK</field>
+        <field name="Mfr Part">FG26X7R1E106KRT6</field>
+        <field name="Part">810-FG26X7R1E106KRT6</field>
+        <field name="Repr-Cost">0.665</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfr Name" value="TDK"/>
+      <property name="Mfr Part" value="FG26X7R1E106KRT6"/>
+      <property name="Part" value="810-FG26X7R1E106KRT6"/>
+      <property name="Repr-Cost" value="0.665"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="solarpump.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>42356b89-e721-4742-ac9a-e9b044997919</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">TDK</field>
+        <field name="Mfr Part">FG28X5R1H105KRT0</field>
+        <field name="Part"> 810-FG28X5R1H105KRT0 </field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Mfr Name" value="TDK"/>
+      <property name="Mfr Part" value="FG28X5R1H105KRT0"/>
+      <property name="Part" value=" 810-FG28X5R1H105KRT0 "/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>216589f5-f023-4157-b17b-c3a4bf24b557</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">TDK</field>
+        <field name="Mfr Part">FG28X5R1H105KRT0</field>
+        <field name="Part"> 810-FG28X5R1H105KRT0 </field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Mfr Name" value="TDK"/>
+      <property name="Mfr Part" value="FG28X5R1H105KRT0"/>
+      <property name="Part" value=" 810-FG28X5R1H105KRT0 "/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>5f4a5de5-ff5a-4cdd-b358-a07dc232af24</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">TDK</field>
+        <field name="Mfr Part">FG28X5R1H105KRT0</field>
+        <field name="Part"> 810-FG28X5R1H105KRT0 </field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Mfr Name" value="TDK"/>
+      <property name="Mfr Part" value="FG28X5R1H105KRT0"/>
+      <property name="Part" value=" 810-FG28X5R1H105KRT0 "/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>0fbbb5af-45fc-4d6d-a458-01b23839caa9</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Mfr Name">Kemet</field>
+        <field name="Mfr Part">A759KS107M1VAAE31 </field>
+        <field name="Part">80-A759KS107M1VAAE31 </field>
+        <field name="Repr-Cost">0.665</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfr Name" value="Kemet"/>
+      <property name="Mfr Part" value="A759KS107M1VAAE31 "/>
+      <property name="Part" value="80-A759KS107M1VAAE31 "/>
+      <property name="Repr-Cost" value="0.665"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>b19f858d-76f5-4e2a-815b-306e749c7f45</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>220uF 6.3V</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Mfr Name">Kemet</field>
+        <field name="Mfr Part">A759KS107M1VAAE31 </field>
+        <field name="Part">80-A759KS107M1VAAE31 </field>
+        <field name="Repr-Cost">0.665</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <property name="Part" value="80-A759KS107M1VAAE31 "/>
+      <property name="Mfr Name" value="Kemet"/>
+      <property name="Mfr Part" value="A759KS107M1VAAE31 "/>
+      <property name="Repr-Cost" value="0.665"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>296b99b8-03eb-40f1-b059-23bcb95a9b16</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>0.1uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Mfr Name">Kemet</field>
+        <field name="Mfr Part">A759KS107M1VAAE31 </field>
+        <field name="Part">80-A759KS107M1VAAE31 </field>
+        <field name="Repr-Cost">0.665</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfr Name" value="Kemet"/>
+      <property name="Mfr Part" value="A759KS107M1VAAE31 "/>
+      <property name="Part" value="80-A759KS107M1VAAE31 "/>
+      <property name="Repr-Cost" value="0.665"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>ebc3d5f7-f541-4942-8bf9-b8915d609986</tstamps>
+    </comp>
+    <comp ref="C_MCU1">
+      <value>1uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">TDK</field>
+        <field name="Mfr Part">FG28X5R1H105KRT0</field>
+        <field name="Part">810-FG28X5R1H105KRT0</field>
+        <field name="Repr-Cost">0.30</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Mfr Name" value="TDK"/>
+      <property name="Mfr Part" value="FG28X5R1H105KRT0"/>
+      <property name="Part" value="810-FG28X5R1H105KRT0"/>
+      <property name="Repr-Cost" value="0.30"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>5c1527ac-7ba5-4350-a6b8-048818320042</tstamps>
+    </comp>
+    <comp ref="C_U1">
+      <value>1uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">TDK</field>
+        <field name="Mfr Part">FG28X5R1H105KRT0</field>
+        <field name="Part">810-FG28X5R1H105KRT0</field>
+        <field name="Repr-Cost">0.30</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Mfr Part" value="FG28X5R1H105KRT0"/>
+      <property name="Part" value="810-FG28X5R1H105KRT0"/>
+      <property name="Mfr Name" value="TDK"/>
+      <property name="Repr-Cost" value="0.30"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>743d69f5-4b6a-455b-894b-b2f870f61e48</tstamps>
+    </comp>
+    <comp ref="C_U2">
+      <value>1uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">TDK</field>
+        <field name="Mfr Part">FG28X5R1H105KRT0</field>
+        <field name="Part">810-FG28X5R1H105KRT0</field>
+        <field name="Repr-Cost">0.30</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Mfr Part" value="FG28X5R1H105KRT0"/>
+      <property name="Part" value="810-FG28X5R1H105KRT0"/>
+      <property name="Mfr Name" value="TDK"/>
+      <property name="Repr-Cost" value="0.30"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>4a2e07c5-2b0c-4335-a399-08db1524234b</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>ON_OFF</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/445/151031SS04000-1714890.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Wurth</field>
+        <field name="Mfr Part">151031SS04000</field>
+        <field name="Part">710-151031SS04000</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="LED_ALT" description="Light emitting diode, filled shape"/>
+      <property name="Mfr Name" value="Wurth"/>
+      <property name="Mfr Part" value="151031SS04000"/>
+      <property name="Part" value="710-151031SS04000"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>1932dde8-acdd-4d7d-8b3c-5d6f8c0d0f5b</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>FAULT</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/445/151031SS04000-1714890.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Wurth</field>
+        <field name="Mfr Part">151031SS04000</field>
+        <field name="Part">710-151031SS04000</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="LED_ALT" description="Light emitting diode, filled shape"/>
+      <property name="Mfr Name" value="Wurth"/>
+      <property name="Mfr Part" value="151031SS04000"/>
+      <property name="Part" value="710-151031SS04000"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>bcf53707-0881-433d-842c-df1a606bc6d5</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>1N5822</value>
+      <footprint>Diode_THT:D_DO-201AD_P15.24mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88526/1n5820.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">ON semi</field>
+        <field name="Mfr Part">1N5822RLG</field>
+        <field name="Part">863-1N5822RLG</field>
+        <field name="Repr-Cost">0.33</field>
+      </fields>
+      <libsource lib="Diode" part="1N5822" description="40V 3A Schottky Barrier Rectifier Diode, DO-201AD"/>
+      <property name="Mfr Name" value="ON semi"/>
+      <property name="Mfr Part" value="1N5822RLG"/>
+      <property name="Part" value="863-1N5822RLG"/>
+      <property name="Repr-Cost" value="0.33"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>cbce2307-dc65-402f-81d4-700a65f729b2</tstamps>
+    </comp>
+    <comp ref="J16">
+      <value>Disply_M</value>
+      <footprint>Connector_PinHeader_1.27mm:PinHeader_1x07_P1.27mm_Vertical</footprint>
+      <fields>
+        <field name="Mfr Name">TE Conn</field>
+        <field name="Mfr Part">1877285-7</field>
+        <field name="Part">571-1877285-7</field>
+        <field name="Repr-Cost">0.51</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x07_Male" description="Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Mfr Part" value="1877285-7"/>
+      <property name="Part" value="571-1877285-7"/>
+      <property name="Mfr Name" value="TE Conn"/>
+      <property name="Repr-Cost" value="0.51"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>56d455c4-d4d5-42b5-87ab-4f2e5b6a6792</tstamps>
+    </comp>
+    <comp ref="J17">
+      <value>TchScr_M</value>
+      <footprint>Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical</footprint>
+      <fields>
+        <field name="Mfr Name">TE Conn</field>
+        <field name="Mfr Part">1877285-6</field>
+        <field name="Part">571-1877285-6</field>
+        <field name="Repr-Cost">0.41</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Mfr Part" value="1877285-6"/>
+      <property name="Part" value="571-1877285-6"/>
+      <property name="Mfr Name" value="TE Conn"/>
+      <property name="Repr-Cost" value="0.41"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>1cea8050-7c4d-45c0-a537-1bd50bf756ad</tstamps>
+    </comp>
+    <comp ref="JP1">
+      <value>Jmp2</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="SolderJumper_2_Bridged" description="Solder Jumper, 2-pole, closed/bridged"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>16024e9a-c8d0-417e-b996-5a882008dc0a</tstamps>
+    </comp>
+    <comp ref="JP2">
+      <value>Jmp1</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="SolderJumper_2_Bridged" description="Solder Jumper, 2-pole, closed/bridged"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>786526c8-e0d1-4454-ad81-d9fce76b1da1</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>330uH</value>
+      <footprint>Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2</footprint>
+      <libsource lib="Device" part="L_Core_Iron" description="Inductor with iron core"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>8ea29791-ee71-4c52-962d-d867bf3007e2</tstamps>
+    </comp>
+    <comp ref="MCU1">
+      <value>RP2040_Stamp_W</value>
+      <footprint>RP2040_Stamp:RP2040_Stamp_SMD</footprint>
+      <libsource lib="SP_RP2040_Stamp" part="RP2040_Stamp_W" description="SolderParty RP2040 Stamp Module (wide)"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>2f3de76d-0ae4-4da9-aa90-1b17e27e8845</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>4K7</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>83d9c4f6-e3b9-428a-ad05-c27dbb6e8d29</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>4K7</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>ac9e9e49-be55-4242-800f-e57a81f199f5</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>2K2</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>d2ae4f81-25df-40b7-b420-23fc5dbec2f8</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>3mOhm, 1W</value>
+      <footprint>solarpump:Yageo Shunt Resistor 10x5.2mm</footprint>
+      <datasheet>https://www.vishay.com/doc?30332</datasheet>
+      <fields>
+        <field name="Description">3mOhm, 1W</field>
+        <field name="Mfr Name">Vishay</field>
+        <field name="Mfr Part">WSKW06123L000FEA</field>
+        <field name="Part">71-WSKW06123L000FEA</field>
+        <field name="Repr-Cost">0.49</field>
+      </fields>
+      <libsource lib="Device" part="R_Shunt" description="Shunt resistor"/>
+      <property name="Description" value="3mOhm, 1W"/>
+      <property name="Mfr Name" value="Vishay"/>
+      <property name="Mfr Part" value="WSKW06123L000FEA"/>
+      <property name="Part" value="71-WSKW06123L000FEA"/>
+      <property name="Repr-Cost" value="0.49"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>09de3627-8760-4158-93be-bb0238c80051</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>2K2</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>c3ab7a83-3a56-47bc-bf46-756c779a8362</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>2K2</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>644819ef-475f-47fa-8002-e9481c211ade</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>2K2</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-10K</field>
+        <field name="Part">603-CFR-50JR-52-10K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-10K"/>
+      <property name="Part" value="603-CFR-50JR-52-10K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>9ccf4c8c-27a4-402b-9fbb-5df8bae5ed62</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/2W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-220R </field>
+        <field name="Part">603-CFR-50JR-52-220R </field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/2W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-220R "/>
+      <property name="Part" value="603-CFR-50JR-52-220R "/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>d9bcef74-1ae8-429b-8d33-cf846ba9ba91</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/2W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-220R </field>
+        <field name="Part">603-CFR-50JR-52-220R </field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/2W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-220R "/>
+      <property name="Part" value="603-CFR-50JR-52-220R "/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>25eebc89-ae3f-4c32-a8d1-aac9b84cbb97</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>39K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-39K</field>
+        <field name="Part">603-CFR-50JR-52-39K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-39K"/>
+      <property name="Part" value="603-CFR-50JR-52-39K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>fd58a315-51c5-43f3-b88b-8c543b0bef21</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>22K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-39K</field>
+        <field name="Part">603-CFR-50JR-52-39K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-39K"/>
+      <property name="Part" value="603-CFR-50JR-52-39K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>c12cc318-eae5-4ea5-b628-35ab05f43642</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>39K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-39K</field>
+        <field name="Part">603-CFR-50JR-52-39K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-39K"/>
+      <property name="Part" value="603-CFR-50JR-52-39K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>b6036167-6f3b-4e24-8cc3-7827237bca48</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>39K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Description">Std. 1/4W Carbon film</field>
+        <field name="Mfr Name">Yageo</field>
+        <field name="Mfr Part">CFR-50JR-52-39K</field>
+        <field name="Part">603-CFR-50JR-52-39K</field>
+        <field name="Repr-Cost">0.09</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Description" value="Std. 1/4W Carbon film"/>
+      <property name="Mfr Name" value="Yageo"/>
+      <property name="Mfr Part" value="CFR-50JR-52-39K"/>
+      <property name="Part" value="603-CFR-50JR-52-39K"/>
+      <property name="Repr-Cost" value="0.09"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>68eec811-8c80-4839-a0e1-e85cf88509c1</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>Rotary_Encoder_Switch</value>
+      <footprint>Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/15/alps_alps-s-a0008379064-1-1733314.pdf</datasheet>
+      <fields>
+        <field name="Mfr Name">Alps</field>
+        <field name="Mfr Part">EC11E152U402</field>
+        <field name="Part">688-EC11E152U402</field>
+        <field name="Repr-Cost">11.34</field>
+      </fields>
+      <libsource lib="Device" part="Rotary_Encoder_Switch" description="Rotary encoder, dual channel, incremental quadrate outputs, with switch"/>
+      <property name="Mfr Name" value="Alps"/>
+      <property name="Mfr Part" value="EC11E152U402"/>
+      <property name="Part" value="688-EC11E152U402"/>
+      <property name="Repr-Cost" value="11.34"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>45610e16-f923-4b9d-86cb-3ba59b0b6d2a</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>LTC2992</value>
+      <footprint>Package_SO:MSOP-16_3x4mm_P0.5mm</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/609/ltc2992-1504204.pdf</datasheet>
+      <fields>
+        <field name="Description">Dual Wide Range Power Monitor</field>
+        <field name="Mfr Name">Analog Devices</field>
+        <field name="Mfr Part">LTC2992IMSPBF</field>
+        <field name="Part">584-LTC2992IMSPBF</field>
+        <field name="Repr-Cost">8.10</field>
+      </fields>
+      <libsource lib="solarpump" part="LTC2992" description="Dual Temperature Voltage and Current Monitor, I2C Interface, MSOP-16"/>
+      <property name="Mfr Name" value="Analog Devices"/>
+      <property name="Part" value="584-LTC2992IMSPBF"/>
+      <property name="Description" value="Dual Wide Range Power Monitor"/>
+      <property name="Mfr Part" value="LTC2992IMSPBF"/>
+      <property name="Repr-Cost" value="8.10"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>d654bf2d-a14b-4854-a694-0471f8706a50</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>LTC2992</value>
+      <footprint>Package_SO:MSOP-16_3x4mm_P0.5mm</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/609/ltc2992-1504204.pdf</datasheet>
+      <fields>
+        <field name="Description">Dual Wide Range Power Monitor</field>
+        <field name="Mfr Name">Analog Devices</field>
+        <field name="Mfr Part">LTC2992IMSPBF</field>
+        <field name="Part">584-LTC2992IMSPBF</field>
+        <field name="Repr-Cost">8.10</field>
+      </fields>
+      <libsource lib="solarpump" part="LTC2992" description="Dual Temperature Voltage and Current Monitor, I2C Interface, MSOP-16"/>
+      <property name="Mfr Name" value="Analog Devices"/>
+      <property name="Part" value="584-LTC2992IMSPBF"/>
+      <property name="Description" value="Dual Wide Range Power Monitor"/>
+      <property name="Mfr Part" value="LTC2992IMSPBF"/>
+      <property name="Repr-Cost" value="8.10"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>01a5f7d7-33e1-4a69-844a-42a4562bcea9</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>LM2576HVS-5</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-5_TabPin3</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm2576.pdf</datasheet>
+      <fields>
+        <field name="Description">Switching Regulator 5V, 3A Step-Down Regulator TO-263</field>
+        <field name="Mfr Name">TI</field>
+        <field name="Mfr Part">LM2576HVS-50</field>
+        <field name="Part">926-LM2576HVS-50</field>
+        <field name="Repr-Cost">8.16</field>
+      </fields>
+      <libsource lib="Regulator_Switching" part="LM2576HVS-5" description="5V 3A, SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-263"/>
+      <property name="Description" value="Switching Regulator 5V, 3A Step-Down Regulator TO-263"/>
+      <property name="Repr-Cost" value="8.16"/>
+      <property name="Mfr Name" value="TI"/>
+      <property name="Mfr Part" value="LM2576HVS-50"/>
+      <property name="Part" value="926-LM2576HVS-50"/>
+      <property name="Sheetname" value="Controller"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/Controller/" tstamps="/cd000158-d79e-4537-961c-8333b03f24b0/"/>
+      <tstamps>546c6e19-d76f-4e79-8107-a28388268425</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x01_Female">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01_Female</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x01_Male">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Female">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Female</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Male">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x06_Female">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06_Female</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x06_Male">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x07_Male">
+      <description>Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x07_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="XLR3">
+      <description>XLR Connector, Male or Female, 3 Pins</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>Jack*XLR*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">XLR3</field>
+        <field name="Datasheet"> ~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="XLR3_1">
+      <description>XLR Connector, Male or Female, 3 Pins</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>Jack*XLR*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">XLR3</field>
+        <field name="Datasheet"> ~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="XLR3_2">
+      <description>XLR Connector, Male or Female, 3 Pins</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>Jack*XLR*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">XLR3</field>
+        <field name="Datasheet"> ~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery">
+      <description>Multiple-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_ALT">
+      <description>Diode, filled shape</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_ALT</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky_ALT">
+      <description>Schottky diode, filled shape</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_ALT</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Jumper_NC_Small">
+      <description>Jumper, normally closed, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Bridged*</fp>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_NC_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_ALT">
+      <description>Light emitting diode, filled shape</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_ALT</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L_Core_Iron">
+      <description>Inductor with iron core</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Core_Iron</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Shunt">
+      <description>Shunt resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*Shunt*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Shunt</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Rotary_Encoder_Switch">
+      <description>Rotary encoder, dual channel, incremental quadrate outputs, with switch</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>RotaryEncoder*Switch*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Rotary_Encoder_Switch</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="B" name="B" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+        <pin num="S1" name="S1" type="passive"/>
+        <pin num="S2" name="S2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Solar_Cells">
+      <description>Multiple solar cells</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SC</field>
+        <field name="Value">Solar_Cells</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Thermistor">
+      <description>Temperature dependent resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TH</field>
+        <field name="Value">Thermistor</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N5822">
+      <description>40V 3A Schottky Barrier Rectifier Diode, DO-201AD</description>
+      <docs>http://www.vishay.com/docs/88526/1n5820.pdf</docs>
+      <footprints>
+        <fp>D*DO?201AD*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N5822</field>
+        <field name="Footprint">Diode_THT:D_DO-201AD_P15.24mm_Horizontal</field>
+        <field name="Datasheet">http://www.vishay.com/docs/88526/1n5820.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Driver_FET" part="IR2104">
+      <description>Half-Bridge Driver, 600V, 210/360mA, PDIP-8/SOIC-8</description>
+      <docs>https://www.infineon.com/dgdl/ir2104.pdf?fileId=5546d462533600a4015355c7c1c31671</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IR2104</field>
+        <field name="Datasheet">https://www.infineon.com/dgdl/ir2104.pdf?fileId=5546d462533600a4015355c7c1c31671</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="IN" type="input"/>
+        <pin num="3" name="~SD" type="input"/>
+        <pin num="4" name="COM" type="power_in"/>
+        <pin num="5" name="LO" type="output"/>
+        <pin num="6" name="VS" type="passive"/>
+        <pin num="7" name="HO" type="output"/>
+        <pin num="8" name="VB" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_2_Bridged">
+      <description>Solder Jumper, 2-pole, closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Bridged*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_2_Bridged</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="Heatsink">
+      <description>Heatsink</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Heatsink_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">HS</field>
+        <field name="Value">Heatsink</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Motor" part="Motor_DC_ALT">
+      <description>DC Motor, alternative symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>PinHeader*P2.54mm*</fp>
+        <fp>TerminalBlock*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">Motor_DC_ALT</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="LM2576HVS-5">
+      <description>5V 3A, SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-263</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm2576.pdf</docs>
+      <footprints>
+        <fp>TO?263*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2576HVS-5</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TO-263-5_TabPin3</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm2576.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="OUT" type="output"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="FB" type="input"/>
+        <pin num="5" name="~ON~/OFF" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="SP_RP2040_Stamp" part="RP2040_Stamp_W">
+      <description>SolderParty RP2040 Stamp Module (wide)</description>
+      <fields>
+        <field name="Reference">MCU?</field>
+        <field name="Value">RP2040_Stamp_W</field>
+        <field name="Footprint">RP2040_Stamp:RP2040_Stamp_THT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GPIO0/PWM0A/UART0TX/I2C0SDA/SPI0RX" type="bidirectional"/>
+        <pin num="2" name="GPIO1/PWM0B/UART0RX/I2C0SCL/SPI0CSn" type="bidirectional"/>
+        <pin num="3" name="GPIO2/PWM1A/I2C1SDA/SPI0SCK" type="bidirectional"/>
+        <pin num="4" name="GPIO3/PWM1B/I2C1SCL/SPI0TX" type="bidirectional"/>
+        <pin num="5" name="GPIO4/PWM2A/UART1TX/I2C0SDA/SPI0RX" type="bidirectional"/>
+        <pin num="6" name="GPIO5/PWM2B/UART1RX/I2C0SCL/SPI0CSn" type="bidirectional"/>
+        <pin num="7" name="GPIO6/PWM3A/I2C1SDA/SPI0SCK" type="bidirectional"/>
+        <pin num="8" name="GPIO7/PWM3B/I2C1SCL/SPI0TX" type="bidirectional"/>
+        <pin num="9" name="GPIO8/PWM4A/UART1TX/I2C0SDA/SPI1RX" type="bidirectional"/>
+        <pin num="10" name="GPIO9/PWM4B/UART1RX/I2C0SCL/SPI1CSn" type="bidirectional"/>
+        <pin num="11" name="GPIO10/PWM5A/I2C1SDA/SPI1SCK" type="bidirectional"/>
+        <pin num="12" name="GPIO11/PWM5B/I2C1SCL/SPI1TX" type="bidirectional"/>
+        <pin num="13" name="GPIO12/PWM6A/UART0TX/I2C0SDA/SPI1RX" type="bidirectional"/>
+        <pin num="14" name="GPIO13/PWM6B/UART0RX/I2C0SCL/SPI1CSn" type="bidirectional"/>
+        <pin num="15" name="GPIO14/PWM7A/I2C1SDA/SPI1SCK" type="bidirectional"/>
+        <pin num="16" name="GPIO15/PWM7B/I2C1SCL/SPI1TX" type="bidirectional"/>
+        <pin num="17" name="GPIO16/PWM0A/UART0TX/SPI0RX" type="bidirectional"/>
+        <pin num="18" name="GPIO17/PWM0B/UART0RX/SPI0CSn" type="bidirectional"/>
+        <pin num="19" name="GPIO18/PWM1A/I2C1SDA/SPI0SCK" type="bidirectional"/>
+        <pin num="20" name="GPIO19/PWM1B/I2C1SCL/SPI0TX" type="bidirectional"/>
+        <pin num="21" name="GPIO20/PWM2A/UART1TX/CLKIN0" type="bidirectional"/>
+        <pin num="22" name="GPIO21/PWM2B/UART1RX/CLKOUT0" type="bidirectional"/>
+        <pin num="23" name="GPIO22/PWM3A/UART1CTS/CLKIN1" type="bidirectional"/>
+        <pin num="24" name="GPIO23/PWM3B/UART1RTS/CLKOUT1" type="bidirectional"/>
+        <pin num="25" name="GPIO24/PWM4A/UART1TX/CLKOUT2" type="bidirectional"/>
+        <pin num="26" name="GPIO25/PWM4B/UART1RX/CLKOUT3" type="bidirectional"/>
+        <pin num="27" name="GPIO26/ADC0" type="bidirectional"/>
+        <pin num="28" name="GPIO27/ADC1" type="bidirectional"/>
+        <pin num="29" name="GPIO28/ADC3" type="bidirectional"/>
+        <pin num="30" name="GPIO29/ADC4" type="bidirectional"/>
+        <pin num="31" name="GND" type="bidirectional"/>
+        <pin num="32" name="VBAT" type="power_in"/>
+        <pin num="33" name="5V" type="power_in"/>
+        <pin num="34" name="3V3_out" type="power_out"/>
+        <pin num="35" name="USB_D-" type="bidirectional"/>
+        <pin num="36" name="USB_D+" type="bidirectional"/>
+        <pin num="37" name="SWDIO" type="bidirectional"/>
+        <pin num="38" name="BOOTSEL" type="input"/>
+        <pin num="39" name="SWCLK" type="bidirectional"/>
+        <pin num="40" name="~RESET" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="2N3904">
+      <description>0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92</description>
+      <docs>https://www.onsemi.com/pub/Collateral/2N3903-D.PDF</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N3904</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/2N3903-D.PDF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="IRLZ34N_1">
+      <description>30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB</description>
+      <docs>http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRLZ34N</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+        <field name="Datasheet">http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="IRLZ34N_2">
+      <description>30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB</description>
+      <docs>http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRLZ34N</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+        <field name="Datasheet">http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="IRLZ34N_3">
+      <description>30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB</description>
+      <docs>http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRLZ34N</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+        <field name="Datasheet">http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="IRLZ34N_4">
+      <description>30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB</description>
+      <docs>http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRLZ34N</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+        <field name="Datasheet">http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="solarpump" part="FLOW">
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">FLOW</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="HZ" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="solarpump" part="LTC2992">
+      <description>Dual Temperature Voltage and Current Monitor, I2C Interface, MSOP-16</description>
+      <docs>https://www.mouser.co.uk/datasheet/2/609/ltc2992-1504204.pdf</docs>
+      <footprints>
+        <fp>MSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U?</field>
+        <field name="Value">LTC2992</field>
+        <field name="Footprint">Package_SO:MSOP-16_3x4mm_P0.5mm</field>
+        <field name="Datasheet">https://www.mouser.co.uk/datasheet/2/609/ltc2992-1504204.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SENSE1+" type="passive"/>
+        <pin num="2" name="SENSE1-" type="passive"/>
+        <pin num="3" name="GPIO1" type="input"/>
+        <pin num="4" name="GPIO3" type="input"/>
+        <pin num="5" name="ADR1" type="input"/>
+        <pin num="6" name="ADR0" type="input"/>
+        <pin num="7" name="INTVCC" type="power_in"/>
+        <pin num="8" name="VDD" type="power_in"/>
+        <pin num="9" name="SCL" type="input"/>
+        <pin num="10" name="SDA1" type="bidirectional"/>
+        <pin num="11" name="SDA0" type="bidirectional"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="GPIO4" type="bidirectional"/>
+        <pin num="14" name="GPIO2" type="bidirectional"/>
+        <pin num="15" name="SENSE2+" type="passive"/>
+        <pin num="16" name="SENSE2-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="solarpump" part="LTC2992_1">
+      <description>Dual Temperature Voltage and Current Monitor, I2C Interface, MSOP-16</description>
+      <docs>https://www.mouser.co.uk/datasheet/2/609/ltc2992-1504204.pdf</docs>
+      <footprints>
+        <fp>MSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U?</field>
+        <field name="Value">LTC2992</field>
+        <field name="Footprint">Package_SO:MSOP-16_3x4mm_P0.5mm</field>
+        <field name="Datasheet">https://www.mouser.co.uk/datasheet/2/609/ltc2992-1504204.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SENSE1+" type="passive"/>
+        <pin num="2" name="SENSE1-" type="passive"/>
+        <pin num="3" name="GPIO1" type="input"/>
+        <pin num="4" name="GPIO3" type="input"/>
+        <pin num="5" name="ADR1" type="input"/>
+        <pin num="6" name="ADR0" type="input"/>
+        <pin num="7" name="INTVCC" type="power_in"/>
+        <pin num="8" name="VDD" type="power_in"/>
+        <pin num="9" name="SCL" type="input"/>
+        <pin num="10" name="SDA1" type="bidirectional"/>
+        <pin num="11" name="SDA0" type="bidirectional"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="GPIO4" type="bidirectional"/>
+        <pin num="14" name="GPIO2" type="bidirectional"/>
+        <pin num="15" name="SENSE2+" type="passive"/>
+        <pin num="16" name="SENSE2-" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad-nightly/library/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad-nightly/library/Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>/usr/share/kicad-nightly/library/Diode.kicad_sym</uri>
+    </library>
+    <library logical="Driver_FET">
+      <uri>/usr/share/kicad-nightly/library/Driver_FET.kicad_sym</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>/usr/share/kicad-nightly/library/Jumper.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad-nightly/library/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Motor">
+      <uri>/usr/share/kicad-nightly/library/Motor.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Switching">
+      <uri>/usr/share/kicad-nightly/library/Regulator_Switching.kicad_sym</uri>
+    </library>
+    <library logical="SP_RP2040_Stamp">
+      <uri>/home/ruth/solarpump v2/symbols/SP_RP2040_Stamp.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad-nightly/library/Switch.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>/usr/share/kicad-nightly/library/Transistor_BJT.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>/usr/share/kicad-nightly/library/Transistor_FET.kicad_sym</uri>
+    </library>
+    <library logical="solarpump">
+      <uri>/home/ruth/solarpump v2/symbols/solarpump.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/Bat">
+      <node ref="J9" pin="2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R4" pin="4" pinfunction="4" pintype="passive"/>
+    </net>
+    <net code="2" name="/Controller/3V3">
+      <node ref="C_U1" pin="1" pintype="passive"/>
+      <node ref="C_U2" pin="1" pintype="passive"/>
+      <node ref="J16" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J17" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="MCU1" pin="34" pinfunction="3V3_out" pintype="power_out"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="INTVCC" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="INTVCC" pintype="power_in"/>
+      <node ref="U3" pin="8" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="3" name="/Controller/FlowPWM_3V3">
+      <node ref="MCU1" pin="23" pinfunction="GPIO22/PWM3A/UART1CTS/CLKIN1" pintype="bidirectional"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/Controller/GPIO1">
+      <node ref="J17" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="MCU1" pin="17" pinfunction="GPIO16/PWM0A/UART0TX/SPI0RX" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/Controller/GPIO2">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="J17" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="MCU1" pin="18" pinfunction="GPIO17/PWM0B/UART0RX/SPI0CSn" pintype="bidirectional"/>
+      <node ref="SW1" pin="B" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="6" name="/Controller/GPIO3">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="J17" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="MCU1" pin="19" pinfunction="GPIO18/PWM1A/I2C1SDA/SPI0SCK" pintype="bidirectional"/>
+      <node ref="SW1" pin="A" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="7" name="/Controller/GPIO4">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="J17" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="MCU1" pin="20" pinfunction="GPIO19/PWM1B/I2C1SCL/SPI0TX" pintype="bidirectional"/>
+      <node ref="SW1" pin="S1" pinfunction="S1" pintype="passive"/>
+    </net>
+    <net code="8" name="/Controller/LTC1_G1">
+      <node ref="MCU1" pin="3" pinfunction="GPIO2/PWM1A/I2C1SDA/SPI0SCK" pintype="bidirectional"/>
+      <node ref="U2" pin="3" pinfunction="GPIO1" pintype="input"/>
+    </net>
+    <net code="9" name="/Controller/LTC1_G2">
+      <node ref="MCU1" pin="4" pinfunction="GPIO3/PWM1B/I2C1SCL/SPI0TX" pintype="bidirectional"/>
+      <node ref="U2" pin="14" pinfunction="GPIO2" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/Controller/LTC2_G1">
+      <node ref="MCU1" pin="1" pinfunction="GPIO0/PWM0A/UART0TX/I2C0SDA/SPI0RX" pintype="bidirectional"/>
+      <node ref="U3" pin="3" pinfunction="GPIO1" pintype="input"/>
+    </net>
+    <net code="11" name="/Controller/LTC2_G2">
+      <node ref="MCU1" pin="2" pinfunction="GPIO1/PWM0B/UART0RX/I2C0SCL/SPI0CSn" pintype="bidirectional"/>
+      <node ref="U3" pin="14" pinfunction="GPIO2" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/Controller/SCL_0">
+      <node ref="MCU1" pin="6" pinfunction="GPIO5/PWM2B/UART1RX/I2C0SCL/SPI0CSn" pintype="bidirectional"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="SCL" pintype="input"/>
+      <node ref="U3" pin="9" pinfunction="SCL" pintype="input"/>
+    </net>
+    <net code="13" name="/Controller/SDA_0">
+      <node ref="MCU1" pin="5" pinfunction="GPIO4/PWM2A/UART1TX/I2C0SDA/SPI0RX" pintype="bidirectional"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="SDA1" pintype="bidirectional"/>
+      <node ref="U2" pin="11" pinfunction="SDA0" pintype="bidirectional"/>
+      <node ref="U3" pin="10" pinfunction="SDA1" pintype="bidirectional"/>
+      <node ref="U3" pin="11" pinfunction="SDA0" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/Controller/SPI_CLK">
+      <node ref="J16" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="MCU1" pin="15" pinfunction="GPIO14/PWM7A/I2C1SDA/SPI1SCK" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/Controller/SPI_CS">
+      <node ref="J16" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="MCU1" pin="14" pinfunction="GPIO13/PWM6B/UART0RX/I2C0SCL/SPI1CSn" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/Controller/SPI_MISO">
+      <node ref="J16" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="MCU1" pin="13" pinfunction="GPIO12/PWM6A/UART0TX/I2C0SDA/SPI1RX" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="/Controller/SPI_MOSI">
+      <node ref="J16" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="MCU1" pin="16" pinfunction="GPIO15/PWM7B/I2C1SCL/SPI1TX" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/Controller/x5V">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R13" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="FB" pintype="input"/>
+    </net>
+    <net code="19" name="/CpFET_Drv_A">
+      <node ref="Q3" pin="1" pinfunction="E" pintype="passive"/>
+      <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="HO" pintype="output"/>
+    </net>
+    <net code="20" name="/CpFET_Drv_B">
+      <node ref="JP3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q5" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="Q8" pin="1" pinfunction="E" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="LO" pintype="output"/>
+    </net>
+    <net code="21" name="/CpFET_Load">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q4" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q5" pin="2" pinfunction="D" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="VS" pintype="passive"/>
+    </net>
+    <net code="22" name="/PumpHi">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J11" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="23" name="/PumpLo">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J11" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q7" pin="2" pinfunction="D" pintype="passive"/>
+    </net>
+    <net code="24" name="/Sol">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="J8" pin="2" pintype="passive"/>
+      <node ref="R2" pin="4" pinfunction="4" pintype="passive"/>
+    </net>
+    <net code="25" name="5V">
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C_MCU1" pin="1" pintype="passive"/>
+      <node ref="J10" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J16" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="MCU1" pin="33" pinfunction="5V" pintype="power_in"/>
+      <node ref="R13" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="26" name="12V">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U1_C1" pin="2" pintype="passive"/>
+      <node ref="U1_C2" pin="2" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="VIN" pintype="power_in"/>
+    </net>
+    <net code="27" name="BatFET">
+      <node ref="MCU1" pin="9" pinfunction="GPIO8/PWM4A/UART1TX/I2C0SDA/SPI1RX" pintype="bidirectional"/>
+      <node ref="Q2" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+    </net>
+    <net code="28" name="BatShuntA">
+      <node ref="R4" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U3" pin="15" pinfunction="SENSE2+" pintype="passive"/>
+    </net>
+    <net code="29" name="BatShuntB">
+      <node ref="R4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="16" pinfunction="SENSE2-" pintype="passive"/>
+    </net>
+    <net code="30" name="BatTh_A">
+      <node ref="JP2" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="31" name="BatTh_B">
+      <node ref="MCU1" pin="27" pinfunction="GPIO26/ADC0" pintype="bidirectional"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+    </net>
+    <net code="32" name="CpFET_A">
+      <node ref="MCU1" pin="11" pinfunction="GPIO10/PWM5A/I2C1SDA/SPI1SCK" pintype="bidirectional"/>
+      <node ref="Q3" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="IN" pintype="input"/>
+    </net>
+    <net code="33" name="CpFET_B">
+      <node ref="MCU1" pin="12" pinfunction="GPIO11/PWM5B/I2C1SCL/SPI1TX" pintype="bidirectional"/>
+      <node ref="Q8" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="~SD" pintype="input"/>
+    </net>
+    <net code="34" name="FlowPWM_5V">
+      <node ref="J10" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+    </net>
+    <net code="35" name="GND">
+      <node ref="-Bat2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="C_MCU1" pin="2" pintype="passive"/>
+      <node ref="C_U1" pin="2" pintype="passive"/>
+      <node ref="C_U2" pin="2" pintype="passive"/>
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J10" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J10" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J16" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J17" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J18" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J8" pin="1" pintype="passive"/>
+      <node ref="JP1" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="JP2" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="JP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="MCU1" pin="31" pinfunction="GND" pintype="bidirectional"/>
+      <node ref="Q1" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q5" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q7" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="C" pinfunction="C" pintype="passive"/>
+      <node ref="SW1" pin="S2" pinfunction="S2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="COM" pintype="power_in"/>
+      <node ref="U1_C1" pin="1" pintype="passive"/>
+      <node ref="U1_C2" pin="1" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="ADR1" pintype="input"/>
+      <node ref="U3" pin="12" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="5" pinfunction="ADR1" pintype="input"/>
+      <node ref="U3" pin="6" pinfunction="ADR0" pintype="input"/>
+      <node ref="U4" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="~ON~/OFF" pintype="input"/>
+    </net>
+    <net code="36" name="Net-(-Bat1-Pad1)">
+      <node ref="J18" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J9" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="D" pintype="passive"/>
+    </net>
+    <net code="37" name="Net-(BT1-Pad1)">
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+    </net>
+    <net code="38" name="Net-(BT1-Pad2)">
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+    </net>
+    <net code="39" name="Net-(BT2-Pad1)">
+      <node ref="BT2" pin="1" pinfunction="+" pintype="passive"/>
+    </net>
+    <net code="40" name="Net-(BT2-Pad2)">
+      <node ref="BT2" pin="2" pinfunction="-" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(C3-Pad2)">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="VB" pintype="passive"/>
+    </net>
+    <net code="42" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="43" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="D" pintype="passive"/>
+    </net>
+    <net code="44" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="45" name="Net-(D6-Pad1)">
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(D6-Pad2)">
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MCU1" pin="25" pinfunction="GPIO24/PWM4A/UART1TX/CLKOUT2" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="Net-(D7-Pad1)">
+      <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+    </net>
+    <net code="48" name="Net-(D7-Pad2)">
+      <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MCU1" pin="26" pinfunction="GPIO25/PWM4B/UART1RX/CLKOUT3" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="Net-(D8-Pad1)">
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="OUT" pintype="output"/>
+    </net>
+    <net code="50" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1" pintype="passive"/>
+      <node ref="SC1" pin="2" pinfunction="-" pintype="passive"/>
+    </net>
+    <net code="51" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2" pintype="passive"/>
+      <node ref="SC1" pin="1" pinfunction="+" pintype="passive"/>
+    </net>
+    <net code="52" name="Net-(J4-Pad1)">
+      <node ref="TH1" pin="2" pintype="passive"/>
+    </net>
+    <net code="53" name="Net-(J7-Pad1)">
+      <node ref="TH1" pin="1" pintype="passive"/>
+    </net>
+    <net code="54" name="Net-(J14-Pad1)">
+      <node ref="J14" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="M1" pin="2" pinfunction="-" pintype="passive"/>
+    </net>
+    <net code="55" name="Net-(J14-Pad2)">
+      <node ref="J14" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="M1" pin="1" pinfunction="+" pintype="passive"/>
+    </net>
+    <net code="56" name="Net-(J15-Pad1)">
+      <node ref="J15" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="S1" pin="2" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="57" name="Net-(J15-Pad2)">
+      <node ref="J15" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="S1" pin="1" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="58" name="Net-(J15-Pad3)">
+      <node ref="J15" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="S1" pin="3" pinfunction="HZ" pintype="passive"/>
+    </net>
+    <net code="59" name="Net-(J15-Pad5)">
+      <node ref="J15" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="TH2" pin="2" pintype="passive"/>
+    </net>
+    <net code="60" name="Net-(J15-Pad6)">
+      <node ref="J15" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="TH2" pin="1" pintype="passive"/>
+    </net>
+    <net code="61" name="Net-(J19-Pad1)">
+      <node ref="J19" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="62" name="Net-(J19-Pad2)">
+      <node ref="J19" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="63" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="Q2" pin="1" pinfunction="E" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="64" name="Net-(Q2-Pad3)">
+      <node ref="Q2" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="65" name="Net-(Q3-Pad3)">
+      <node ref="Q3" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+    </net>
+    <net code="66" name="Net-(Q6-Pad1)">
+      <node ref="Q6" pin="1" pinfunction="E" pintype="passive"/>
+      <node ref="Q7" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+    </net>
+    <net code="67" name="Net-(Q6-Pad3)">
+      <node ref="Q6" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="68" name="Net-(Q8-Pad3)">
+      <node ref="Q8" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R28" pin="2" pintype="passive"/>
+    </net>
+    <net code="69" name="Net-(R13-Pad2)">
+      <node ref="R13" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="SENSE1+" pintype="passive"/>
+    </net>
+    <net code="70" name="Net-(R13-Pad3)">
+      <node ref="R13" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="SENSE1-" pintype="passive"/>
+    </net>
+    <net code="71" name="PuFET">
+      <node ref="MCU1" pin="10" pinfunction="GPIO9/PWM4B/UART1RX/I2C0SCL/SPI1CSn" pintype="bidirectional"/>
+      <node ref="Q6" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="72" name="PuShuntA">
+      <node ref="R9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U2" pin="16" pinfunction="SENSE2-" pintype="passive"/>
+    </net>
+    <net code="73" name="PuShuntB">
+      <node ref="R9" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="SENSE2+" pintype="passive"/>
+    </net>
+    <net code="74" name="PuTh_A">
+      <node ref="J10" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="75" name="PuTh_B">
+      <node ref="J10" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="MCU1" pin="28" pinfunction="GPIO27/ADC1" pintype="bidirectional"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+    </net>
+    <net code="76" name="SolShuntA">
+      <node ref="R2" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="SENSE1-" pintype="passive"/>
+    </net>
+    <net code="77" name="SolShuntB">
+      <node ref="R2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="SENSE1+" pintype="passive"/>
+    </net>
+    <net code="78" name="USB_D+">
+      <node ref="MCU1" pin="36" pinfunction="USB_D+" pintype="bidirectional"/>
+    </net>
+    <net code="79" name="USB_D-">
+      <node ref="MCU1" pin="35" pinfunction="USB_D-" pintype="bidirectional"/>
+    </net>
+    <net code="80" name="VBAT">
+      <node ref="+Bat2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="MCU1" pin="32" pinfunction="VBAT" pintype="power_in"/>
+    </net>
+    <net code="81" name="unconnected-(J1-Pad3)">
+      <node ref="J1" pin="3" pintype="passive+no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(J8-Pad3)">
+      <node ref="J8" pin="3" pintype="passive+no_connect"/>
+    </net>
+    <net code="83" name="unconnected-(J9-Pad3)">
+      <node ref="J9" pin="3" pintype="passive+no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(J15-Pad4)">
+      <node ref="J15" pin="4" pinfunction="Pin_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(J20-Pad1)">
+      <node ref="J20" pin="1" pintype="passive"/>
+    </net>
+    <net code="86" name="unconnected-(J20-Pad2)">
+      <node ref="J20" pin="2" pintype="passive"/>
+    </net>
+    <net code="87" name="unconnected-(J20-Pad3)">
+      <node ref="J20" pin="3" pintype="passive+no_connect"/>
+    </net>
+    <net code="88" name="unconnected-(MCU1-Pad7)">
+      <node ref="MCU1" pin="7" pinfunction="GPIO6/PWM3A/I2C1SDA/SPI0SCK" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="89" name="unconnected-(MCU1-Pad8)">
+      <node ref="MCU1" pin="8" pinfunction="GPIO7/PWM3B/I2C1SCL/SPI0TX" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="90" name="unconnected-(MCU1-Pad21)">
+      <node ref="MCU1" pin="21" pinfunction="GPIO20/PWM2A/UART1TX/CLKIN0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(MCU1-Pad22)">
+      <node ref="MCU1" pin="22" pinfunction="GPIO21/PWM2B/UART1RX/CLKOUT0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(MCU1-Pad24)">
+      <node ref="MCU1" pin="24" pinfunction="GPIO23/PWM3B/UART1RTS/CLKOUT1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="93" name="unconnected-(MCU1-Pad29)">
+      <node ref="MCU1" pin="29" pinfunction="GPIO28/ADC3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="94" name="unconnected-(MCU1-Pad30)">
+      <node ref="MCU1" pin="30" pinfunction="GPIO29/ADC4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="95" name="unconnected-(MCU1-Pad37)">
+      <node ref="MCU1" pin="37" pinfunction="SWDIO" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="96" name="unconnected-(MCU1-Pad38)">
+      <node ref="MCU1" pin="38" pinfunction="BOOTSEL" pintype="input+no_connect"/>
+    </net>
+    <net code="97" name="unconnected-(MCU1-Pad39)">
+      <node ref="MCU1" pin="39" pinfunction="SWCLK" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="98" name="unconnected-(MCU1-Pad40)">
+      <node ref="MCU1" pin="40" pinfunction="~RESET" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="99" name="unconnected-(U2-Pad4)">
+      <node ref="U2" pin="4" pinfunction="GPIO3" pintype="input+no_connect"/>
+    </net>
+    <net code="100" name="unconnected-(U2-Pad6)">
+      <node ref="U2" pin="6" pinfunction="ADR0" pintype="input+no_connect"/>
+    </net>
+    <net code="101" name="unconnected-(U2-Pad13)">
+      <node ref="U2" pin="13" pinfunction="GPIO4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="102" name="unconnected-(U3-Pad4)">
+      <node ref="U3" pin="4" pinfunction="GPIO3" pintype="input+no_connect"/>
+    </net>
+    <net code="103" name="unconnected-(U3-Pad13)">
+      <node ref="U3" pin="13" pinfunction="GPIO4" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

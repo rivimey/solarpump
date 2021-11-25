@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "solarpump")(type "KiCad")(uri "${KIPRJMOD}/symbols/solarpump.kicad_sym")(options "")(descr ""))
+  (lib (name "SP_RP2040_Stamp")(type "KiCad")(uri "${KIPRJMOD}/symbols/SP_RP2040_Stamp.kicad_sym")(options "")(descr ""))
+  (lib (name "rp2040stamp")(type "KiCad")(uri "${KIPRJMOD}/symbols/rp2040stamp.kicad_sym")(options "")(descr ""))
+  (lib (name "ltc2990")(type "KiCad")(uri "${KIPRJMOD}/symbols/ltc2990.kicad_sym")(options "")(descr ""))
+)
