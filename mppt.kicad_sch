@@ -6,7 +6,7 @@
 
   (title_block
     (title "SolarPump v3")
-    (date "2021-11-15")
+    (date "2021-12-03")
     (rev "1.0")
     (company "IvimeyCom")
   )
@@ -4722,7 +4722,7 @@
     (property "Value" "470uF,25V" (id 1) (at 165.9891 147.9166 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H16.0mm_P5.00mm" (id 2) (at 173.355 145.415 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" (id 2) (at 173.355 145.415 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.mouser.co.uk/datasheet/2/212/KEM_A4009_ESW-1102613.pdf" (id 3) (at 173.355 145.415 0)
