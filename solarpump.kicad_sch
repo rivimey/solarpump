@@ -3830,7 +3830,7 @@
       (reference "SW1") (unit 1) (value "STOP_SW") (footprint "solarpump:Schurter_SW_MTG_PUSH-12.7mm")
     )
     (path "/029028ba-5757-4d0d-bf20-a0af7c517500/8ac9a25e-08af-498e-9179-e8ac52fb174a"
-      (reference "SW2") (unit 1) (value "Rotary Enc EC11E") (footprint "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm")
+      (reference "SW2") (unit 1) (value "Rotary Enc EC11E") (footprint "solarpump:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_Inset")
     )
     (path "/baf33a82-dd29-4dc3-9216-cb3f7018362e/259fbb66-1129-496e-8f4e-4d89f3f9b553"
       (reference "SW3") (unit 1) (value "SW_POWER") (footprint "Connector_Wire:SolderWire-0.75sqmm_1x02_P4.8mm_D1.25mm_OD2.3mm")

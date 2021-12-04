@@ -2278,7 +2278,7 @@
     (uuid 8ac9a25e-08af-498e-9179-e8ac52fb174a)
     (property "Reference" "SW2" (id 0) (at 224.155 113.4068 90))
     (property "Value" "Rotary Enc EC11E" (id 1) (at 220.98 120.1505 90))
-    (property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" (id 2) (at 220.345 101.346 0)
+    (property "Footprint" "solarpump:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_Inset" (id 2) (at 220.345 101.346 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.mouser.co.uk/datasheet/2/15/alps_alps-s-a0008379064-1-1733314.pdf" (id 3) (at 224.155 98.806 0)

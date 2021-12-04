@@ -1,4 +1,4 @@
-19777426127419035
+19779069795404800
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84510,6 +84510,13 @@ Feather Wing adafruit module
 0
 28
 28
+solarpump
+RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_Inset
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
+0
+7
+6
 solarpump
 SIP7_ITB
 SIP7_ITB
