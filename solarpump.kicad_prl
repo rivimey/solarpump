@@ -2,13 +2,13 @@
   "board": {
     "active_layer": 0,
     "active_layer_preset": "",
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "pads": 0.6000000238418579,
-      "tracks": 1.0,
+      "tracks": 0.7400000095367432,
       "vias": 0.47999998927116394,
       "zones": 0.8899999856948853
     },
@@ -61,7 +61,7 @@
       35,
       36
     ],
-    "visible_layers": "0009230_ffffffff",
+    "visible_layers": "000d230_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {

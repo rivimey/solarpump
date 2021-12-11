@@ -139,7 +139,7 @@ SPST switch between the battery and the PCB.
 
 Some pictures of the build so far (from KiCad):
 
-![PCB for Solarpump v3](/3dpics/solarpumpv3_5r.png)
+![PCB for Solarpump v3](/3dpics/solarpumpv3_14r.png)
 
-![PCB for Solarpump v3](/3dpics/solarpumpv3_8r.png)
+![PCB for Solarpump v3](/3dpics/solarpumpv3_15r.png)
 

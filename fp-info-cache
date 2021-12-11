@@ -1,4 +1,4 @@
-19779069795404800
+19783987715430286
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84483,6 +84483,13 @@ Allegro CB-PFF
 37
 5
 solarpump
+BatteryHolder_Keystone_500
+Keystone #500, CR1220 battery holder, http://www.keyelco.com/product-pdf.cfm?p=710
+CR1220 battery holder
+0
+2
+2
+solarpump
 Buzzer_3V
 
 
@@ -84511,6 +84518,13 @@ Feather Wing adafruit module
 28
 28
 solarpump
+OLED_SOG320132A_M383
+OLED_SOG320132A_M383
+
+0
+10
+10
+solarpump
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_Inset
 Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
 rotary encoder
@@ -84521,6 +84535,13 @@ solarpump
 SIP7_ITB
 SIP7_ITB
 SIP7
+0
+4
+4
+solarpump
+STEMMA-QT_JSTS4B_PH-P2.00mm_Horizontal
+JST PH series connector, S4B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH top entry
 0
 4
 4
