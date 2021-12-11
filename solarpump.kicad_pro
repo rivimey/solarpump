@@ -450,7 +450,7 @@
       "netlist": "",
       "specctra_dsn": "",
       "step": "solarpump.step",
-      "vrml": ""
+      "vrml": "solarpump.wrl"
     },
     "page_layout_descr_file": ""
   },
