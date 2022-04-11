@@ -1,15 +1,29 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,(5.99.0-13134-g7fd669b6a8-dirty)*%
-%TF.CreationDate,2021-11-08T01:58:15+00:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,(6.0.0-rc1-489-g57af990066)*%
+%TF.CreationDate,2021-12-17T01:52:51+00:00*%
 %TF.ProjectId,solarpump,736f6c61-7270-4756-9d70-2e6b69636164,1.0*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Paste,Bot*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.99.0-13134-g7fd669b6a8-dirty)) date 2021-11-08 01:58:15*
+G04 Created by KiCad (PCBNEW (6.0.0-rc1-489-g57af990066)) date 2021-12-17 01:52:51*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
+%ADD10O,4.000000X2.000000*%
+%ADD11R,3.200000X2.000000*%
 G04 APERTURE END LIST*
+D10*
+%TO.C,SW2*%
+X161672600Y-36029900D03*
+X161672600Y-41029900D03*
+X161672600Y-38529900D03*
+D11*
+X170294600Y-31280900D03*
+X170294000Y-45783300D03*
+D10*
+X178916000Y-41004500D03*
+X178916000Y-36004500D03*
+%TD*%
 M02*

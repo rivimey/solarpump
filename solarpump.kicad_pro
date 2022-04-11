@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 2.0,
-          "width": 2.0
+          "drill": 3.0,
+          "height": 5.0,
+          "width": 5.0
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -452,7 +452,7 @@
       "step": "solarpump.step",
       "vrml": "solarpump.wrl"
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "/Volumes/rivimey/Electronics/ivimeycom_layout.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -488,7 +488,7 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "/Users/ruth/Electronics/ivimeycom_layout.kicad_wks",
     "plot_directory": "pdfs/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",

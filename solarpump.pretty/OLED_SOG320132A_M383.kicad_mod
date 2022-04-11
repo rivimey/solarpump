@@ -1,6 +1,6 @@
 (footprint "OLED_SOG320132A_M383" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 61B3EF44)
+  (tedit 61B9D492)
   (descr "OLED_SOG320132A_M383")
   (attr smd exclude_from_pos_files)
   (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS")
@@ -28,4 +28,9 @@
   (pad "8" thru_hole circle (at -60 -6.385) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (tstamp 367262a4-5825-4d0b-bbaa-39e07deb1b42))
   (pad "9" thru_hole circle (at -60 -8.925) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (tstamp 4caf7564-ce49-4d5f-902c-a6698090fa7f))
   (pad "10" thru_hole circle (at -60 -11.465) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (tstamp 66efb0ee-0ceb-4a5f-86f2-829c3694a867))
+  (model "${KIPRJMOD}/3dmodels/OLED_SOG320132A_M383.step"
+    (offset (xyz 1.22 0.03 8))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

@@ -1,16 +1,16 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 37,
     "active_layer_preset": "",
-    "auto_track_width": false,
+    "auto_track_width": true,
     "hidden_nets": [],
-    "high_contrast_mode": 0,
+    "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
-      "pads": 0.6000000238418579,
-      "tracks": 0.7400000095367432,
-      "vias": 0.47999998927116394,
-      "zones": 0.8899999856948853
+      "pads": 0.8299999833106995,
+      "tracks": 1.0,
+      "vias": 0.4099999964237213,
+      "zones": 1.0
     },
     "ratsnest_display_mode": 0,
     "selection_filter": {
@@ -61,8 +61,8 @@
       35,
       36
     ],
-    "visible_layers": "000d230_ffffffff",
-    "zone_display_mode": 0
+    "visible_layers": "ffcff30_ffffffff",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "solarpump.kicad_prl",

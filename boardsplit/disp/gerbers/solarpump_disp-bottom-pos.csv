@@ -1,0 +1,5 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"BT2","Lith 3V","BatteryHolder_Keystone_500",-129.667000,-9.398000,-90.000000,bottom
+"BZ1","Buzzer","Buzzer_3V",-32.258000,-20.447000,90.000000,bottom
+"J6","Conn_DISP","PinHeader_2x06_P2.00mm_Vertical",-64.309000,-8.239000,90.000000,bottom
+"J12","Stemma-QT_QWIIC","STEMMA-QT_JSTS4B_PH-P2.00mm_Horizontal",-79.451200,-8.331200,0.000000,bottom
