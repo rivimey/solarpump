@@ -2252,7 +2252,7 @@
     (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" (id 2) (at 52.07 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (id 3) (at 52.07 66.04 0)
+    (property "Datasheet" "https://www.we-online.com/katalog/datasheet/860020772008.pdf" (id 3) (at 52.07 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Manuf" "Wurth Elektronik " (id 4) (at 52.07 66.04 0)

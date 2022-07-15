@@ -34,8 +34,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.6,
-          "width": 2.05
+          "height": 2.0,
+          "width": 2.0
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -106,13 +106,13 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.09999999999999999,
+        "min_clearance": 0.049999999999999996,
         "min_copper_edge_clearance": 0.25,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
-        "min_silk_clearance": 0.09999999999999999,
+        "min_silk_clearance": 0.024999999999999998,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.25,
         "min_via_annular_width": 0.049999999999999996,
@@ -450,9 +450,9 @@
       "netlist": "",
       "specctra_dsn": "",
       "step": "solarpump.step",
-      "vrml": "solarpump.wrl"
+      "vrml": "solarpump3_v1.1.2/solarpump.wrl"
     },
-    "page_layout_descr_file": "/Volumes/rivimey/Electronics/ivimeycom_layout.kicad_wks"
+    "page_layout_descr_file": "/Users/ruth/Desktop/temp.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
