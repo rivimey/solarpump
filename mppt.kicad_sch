@@ -6,7 +6,7 @@
 
   (title_block
     (title "SolarPump v3")
-    (date "2022-03-09")
+    (date "2022-05-18")
     (rev "1.1")
     (company "IvimeyCom")
   )
@@ -4554,7 +4554,7 @@
     (uuid c9ce1b2f-199a-4f54-9740-42c324cfb075)
     (property "Reference" "J10" (id 0) (at 250.2154 37.8756 0))
     (property "Value" "Fan_F" (id 1) (at 253.5174 46.6285 0))
-    (property "Footprint" "~" (id 2) (at 249.555 41.91 0)
+    (property "Footprint" "" (id 2) (at 249.555 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 249.555 41.91 0)
@@ -4717,7 +4717,7 @@
     (property "Value" "Fan_3pin" (id 1) (at 271.3483 43.7766 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "~" (id 2) (at 267.335 42.926 0)
+    (property "Footprint" "" (id 2) (at 267.335 42.926 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 267.335 42.926 0)
