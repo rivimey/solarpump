@@ -1,772 +1,2199 @@
-(kicad_sch (version 20211123) (generator eeschema)
-
-  (uuid 8e3eb177-5dbf-4214-9fca-0649e539174c)
-
-  (paper "A4")
-
-  (title_block
-    (title "SolarPump v3")
-    (date "2022-05-18")
-    (rev "1.1")
-    (company "IvimeyCom")
-  )
-
-  (lib_symbols
-    (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (id 0) (at 0.254 1.778 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "C_Small" (id 1) (at 0.254 -2.032 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "capacitor cap" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Unpolarized capacitor, small symbol" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "C_*" (id 6) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_Small_0_1"
-        (polyline
-          (pts
-            (xy -1.524 -0.508)
-            (xy 1.524 -0.508)
-          )
-          (stroke (width 0.3302) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.524 0.508)
-            (xy 1.524 0.508)
-          )
-          (stroke (width 0.3048) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "C_Small_1_1"
-        (pin passive line (at 0 2.54 270) (length 2.032)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 2.032)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (id 0) (at 0.762 0.508 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "R_Small" (id 1) (at 0.762 -1.016 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R resistor" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor, small symbol" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_Small_0_1"
-        (rectangle (start -0.762 1.778) (end 0.762 -1.778)
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "R_Small_1_1"
-        (pin passive line (at 0 2.54 270) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Sensor_Current:ACS758xCB-050B-PFF" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (id 0) (at -7.62 6.35 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "ACS758xCB-050B-PFF" (id 1) (at 2.54 6.35 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "Sensor_Current:Allegro_CB_PFF" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/ACS758-Datasheet.ashx?la=en" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "hall effect current monitor sensor isolated" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "±50A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 40mV/A, CB-5 PFF" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Allegro*CB*PFF*" (id 6) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "ACS758xCB-050B-PFF_0_1"
-        (rectangle (start -7.62 5.08) (end 7.62 -5.08)
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-        (polyline
-          (pts
-            (xy -2.54 -3.175)
-            (xy -2.54 -4.445)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.54 -1.27)
-            (xy -2.54 -2.54)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.54 0.635)
-            (xy -2.54 -0.635)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.54 1.27)
-            (xy -2.54 2.54)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.54 3.175)
-            (xy -2.54 4.445)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "ACS758xCB-050B-PFF_1_1"
-        (pin power_in line (at 0 7.62 270) (length 2.54)
-          (name "VCC" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -7.62 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 10.16 0 180) (length 2.54)
-          (name "VIOUT" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -10.16 2.54 0) (length 2.54)
-          (name "IP+" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -10.16 -2.54 0) (length 2.54)
-          (name "IP-" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (id 0) (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3V3" (id 1) (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3V3_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "+3V3_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (id 0) (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (id 1) (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GNDA" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (id 0) (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GNDA" (id 1) (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GNDA\" , analog ground" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GNDA_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "GNDA_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GNDA" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 137.795 81.28) (diameter 1.016) (color 0 0 0 0)
-    (uuid 04faa6f8-09d5-4a29-a760-46b6402b50f3)
-  )
-  (junction (at 128.905 125.095) (diameter 1.016) (color 0 0 0 0)
-    (uuid 0c9773c4-9ef7-4a9c-88dd-c1d4b9c421a0)
-  )
-  (junction (at 149.225 64.77) (diameter 1.016) (color 0 0 0 0)
-    (uuid 5c99666c-7749-455f-b1a3-c7bcd644158c)
-  )
-  (junction (at 135.255 112.395) (diameter 1.016) (color 0 0 0 0)
-    (uuid 5f670558-2067-470e-996e-8e27b54311da)
-  )
-  (junction (at 128.905 112.395) (diameter 1.016) (color 0 0 0 0)
-    (uuid 63b68ece-0a85-4af3-bc33-a171573f16ef)
-  )
-  (junction (at 144.145 125.095) (diameter 1.016) (color 0 0 0 0)
-    (uuid 6af52136-c934-4b7a-a59f-5db63efd29eb)
-  )
-  (junction (at 161.925 81.28) (diameter 1.016) (color 0 0 0 0)
-    (uuid b599a67c-09cc-4c41-8156-5cddb3f88557)
-  )
-  (junction (at 128.905 102.235) (diameter 1.016) (color 0 0 0 0)
-    (uuid f2b6acd1-ec4b-4a0f-b0b7-2146865b1f2a)
-  )
-
-  (wire (pts (xy 128.905 102.235) (xy 146.685 102.235))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 0708c07f-7546-45e3-8bae-841d404b7496)
-  )
-  (wire (pts (xy 135.255 112.395) (xy 135.255 114.935))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 1292e464-1354-4c64-baef-537d8e1de810)
-  )
-  (wire (pts (xy 144.145 125.095) (xy 167.64 125.095))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 131fdf09-8508-4112-85ee-6748b2a4e918)
-  )
-  (wire (pts (xy 135.255 120.015) (xy 135.255 127))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 1eede8dd-0f3d-48f8-8b5a-7ee920ef8bf9)
-  )
-  (wire (pts (xy 151.765 91.44) (xy 151.765 102.235))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 2215eb29-594b-4ff4-8229-1ecb25900bb3)
-  )
-  (wire (pts (xy 111.76 125.095) (xy 128.905 125.095))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 2bf10e8c-8fda-4b67-ae61-07654ae4a10c)
-  )
-  (wire (pts (xy 128.905 120.015) (xy 128.905 125.095))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 302d961a-a6f6-4a7d-9180-58b784033664)
-  )
-  (wire (pts (xy 128.905 112.395) (xy 128.905 114.935))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 3500cb28-5e62-4e5e-97fa-ad8a3ff6d712)
-  )
-  (wire (pts (xy 128.905 108.585) (xy 128.905 112.395))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 52644524-0fcf-4095-9420-868d063e0723)
-  )
-  (wire (pts (xy 137.795 71.12) (xy 137.795 64.77))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 5e8235a6-18e7-4f8d-a862-df9fdbf7c9b4)
-  )
-  (wire (pts (xy 144.145 114.935) (xy 144.145 125.095))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 6b9f3da1-d035-42da-9900-bcb3f5b6125b)
-  )
-  (wire (pts (xy 137.795 81.28) (xy 141.605 81.28))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 7017e3af-f738-4a34-8eeb-49c2224d008b)
-  )
-  (wire (pts (xy 128.905 102.235) (xy 128.905 103.505))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 7869989b-2cfa-45b3-bc49-7cbbc86e2aa6)
-  )
-  (wire (pts (xy 161.925 88.9) (xy 161.925 90.17))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 87f533e8-2499-4e9c-af30-75e54940f977)
-  )
-  (wire (pts (xy 137.795 81.28) (xy 137.795 83.82))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 8b8fd5d5-dc7e-4159-9680-55f67800e550)
-  )
-  (wire (pts (xy 135.255 112.395) (xy 144.145 112.395))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 8e1ae85c-00f0-48ee-8e8a-12746a9ad8aa)
-  )
-  (wire (pts (xy 156.845 81.28) (xy 161.925 81.28))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 992a578f-e384-4cff-a2ec-a43c0a9f8271)
-  )
-  (wire (pts (xy 128.905 112.395) (xy 135.255 112.395))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 9fe866e2-07fa-4c23-a80f-ff2cb5c4220b)
-  )
-  (wire (pts (xy 151.765 102.235) (xy 167.64 102.235))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid a4d3ac90-1180-47fa-afe1-2295a9ff1ab4)
-  )
-  (wire (pts (xy 149.225 64.77) (xy 170.815 64.77))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid a4eb1399-e20a-452c-9a23-ec873d26d4c3)
-  )
-  (wire (pts (xy 146.685 102.235) (xy 146.685 91.44))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid b30e84f2-a93b-4ce2-9156-99ea60d52519)
-  )
-  (wire (pts (xy 128.905 125.095) (xy 144.145 125.095))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid ba9c920c-9576-479f-883c-9f381ab025e4)
-  )
-  (wire (pts (xy 137.795 64.77) (xy 149.225 64.77))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid c0b2e752-89b1-4194-911a-35c88bffc7df)
-  )
-  (wire (pts (xy 111.76 102.235) (xy 128.905 102.235))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid c26816dc-2b53-4cc4-b43d-95c7cece9463)
-  )
-  (wire (pts (xy 149.225 64.77) (xy 149.225 71.12))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid cdaf4df2-4778-49ad-af88-2ef9a1b4fdef)
-  )
-  (wire (pts (xy 161.925 77.47) (xy 161.925 81.28))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid d3cc5ddb-00d5-4937-93d7-97e5196e3d54)
-  )
-  (wire (pts (xy 137.795 76.2) (xy 137.795 81.28))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid d463fd81-6942-4a58-b79c-cfc3f131b27b)
-  )
-  (wire (pts (xy 161.925 83.82) (xy 161.925 81.28))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid e3ad29ac-7ce9-49f5-b6d4-4c9e6db8766d)
-  )
-
-  (text "factor = 1 / (1+22) = 0.045\n12V * 0.045 = 0.54V" (at 109.855 113.665 0)
-    (effects (font (size 0.75 0.75)) (justify left bottom))
-    (uuid 5add24a6-fe16-4a04-9988-b0d33e95ae1f)
-  )
-
-  (hierarchical_label "VCurrent_Batt+" (shape input) (at 170.815 64.77 0)
-    (effects (font (size 1.4986 1.4986)) (justify left))
-    (uuid 001269bc-91a3-4ede-90e5-dc04a1ac468d)
-  )
-  (hierarchical_label "BattIO_N" (shape input) (at 167.64 125.095 0)
-    (effects (font (size 1.4986 1.4986)) (justify left))
-    (uuid 07f054f3-ca97-41d5-9df8-61382ceaab10)
-  )
-  (hierarchical_label "Load_P" (shape output) (at 111.76 102.235 180)
-    (effects (font (size 1.4986 1.4986)) (justify right))
-    (uuid 5ed28eba-262a-47b7-8754-6f73735f841a)
-  )
-  (hierarchical_label "VBat+" (shape input) (at 144.145 112.395 0)
-    (effects (font (size 1.4986 1.4986)) (justify left))
-    (uuid aee16299-4141-4a9f-b589-4cdb9a93eb83)
-  )
-  (hierarchical_label "VBatt-" (shape input) (at 144.145 114.935 0)
-    (effects (font (size 1.4986 1.4986)) (justify left))
-    (uuid ce9c282f-b87e-4278-895b-b8cda4a2c575)
-  )
-  (hierarchical_label "BattIO_P" (shape input) (at 167.64 102.235 0)
-    (effects (font (size 1.4986 1.4986)) (justify left))
-    (uuid dd110ed7-5caf-4144-868c-5533fa3e6b75)
-  )
-  (hierarchical_label "Load_N" (shape output) (at 111.76 125.095 180)
-    (effects (font (size 1.4986 1.4986)) (justify right))
-    (uuid f0d54939-fb66-4fab-9441-033b7bf3ab1c)
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 128.905 117.475 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 224f5c89-4580-415a-9fa5-faef11e69d0a)
-    (property "Reference" "R46" (id 0) (at 130.4037 116.5665 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1k" (id 1) (at 130.4037 119.3416 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (id 2) (at 128.905 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 128.905 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manuf" "Yageo" (id 4) (at 128.905 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part" "RC0805FR-071KL" (id 5) (at 128.905 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor" "Mouser" (id 6) (at 128.905 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor SKU" "603-RC0805FR-071KL" (id 7) (at 128.905 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor Cost" "0.077" (id 8) (at 128.905 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a8b25cd4-cbda-4caa-adbb-9e10a0ecac11))
-    (pin "2" (uuid 4de0c7de-6a17-48aa-b45d-b5ab6e93a2f8))
-  )
-
-  (symbol (lib_id "power:+3V3") (at 161.925 77.47 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 55c4313d-2d60-41af-8b6c-28a2924c411e)
-    (property "Reference" "#PWR076" (id 0) (at 161.925 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (id 1) (at 161.925 73.8654 0))
-    (property "Footprint" "" (id 2) (at 161.925 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 161.925 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 21715b11-5e7a-4886-9f62-7bc8c979fe77))
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 128.905 106.045 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 57f40d1e-c0b9-43ca-90f6-f8f3f2ca0b10)
-    (property "Reference" "R45" (id 0) (at 130.4037 105.1365 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "22k" (id 1) (at 130.4037 107.9116 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (id 2) (at 128.905 106.045 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 128.905 106.045 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manuf" "Yageo" (id 4) (at 128.905 106.045 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part" "RC0805FR-0722KL" (id 5) (at 128.905 106.045 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor" "Mouser" (id 6) (at 128.905 106.045 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor SKU" "603-RC0805FR-0722KL" (id 7) (at 128.905 106.045 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor Cost" "0.077" (id 8) (at 128.905 106.045 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid adb165de-37ab-4032-9790-ef89b0810128))
-    (pin "2" (uuid 19af61df-c946-49a5-8570-87204bde91d7))
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 161.925 86.36 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 7d3f2860-7f19-404d-8525-66b8b883eb04)
-    (property "Reference" "C48" (id 0) (at 162.9792 84.1815 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0.1uF" (id 1) (at 162.9792 88.2266 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (id 2) (at 161.925 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.mouser.co.uk/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" (id 3) (at 161.925 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manuf" "Samsung Electro-Mechanics" (id 4) (at 161.925 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part" "CL21B104KACNNND" (id 5) (at 161.925 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor" "Mouser" (id 6) (at 161.925 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor SKU" "187-CL21B104KACNNND" (id 7) (at 161.925 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor Cost" "0.016" (id 8) (at 161.925 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6f182428-a5e0-4bb7-bda7-ffd585b502fc))
-    (pin "2" (uuid 1851197f-7da4-4be1-99a7-9d8ddf7571ec))
-  )
-
-  (symbol (lib_id "power:GND") (at 137.795 83.82 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 85654bae-6a5c-42a3-baf5-ebdc0f134878)
-    (property "Reference" "#PWR075" (id 0) (at 137.795 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 137.795 88.3826 0))
-    (property "Footprint" "" (id 2) (at 137.795 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 137.795 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2e7a525c-541c-46b1-8484-a7ffd1eec1a3))
-  )
-
-  (symbol (lib_id "Sensor_Current:ACS758xCB-050B-PFF") (at 149.225 81.28 270) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 866ca83c-5dd7-4674-bfa9-e121a24d212a)
-    (property "Reference" "U13" (id 0) (at 151.4035 71.3739 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "ACS758xCB" (id 1) (at 143.5484 68.8339 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "solarpump:Allegro_CB_PFF" (id 2) (at 149.225 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/ACS758-Datasheet.ashx?la=en" (id 3) (at 149.225 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manuf" "~" (id 4) (at 149.225 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part" "~" (id 5) (at 149.225 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor" "~" (id 6) (at 149.225 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor SKU" "~" (id 7) (at 149.225 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor Cost" "~" (id 8) (at 149.225 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a1ee7067-4d5f-4d26-9d9c-62cf43e007e6))
-    (pin "2" (uuid b1575d8b-e7a4-4bb8-8762-cbf53a8c13b0))
-    (pin "3" (uuid 53f385d7-0b82-4e57-98e9-cd84048d782f))
-    (pin "4" (uuid 5ad050a4-5b38-418e-96d5-a376b8fce490))
-    (pin "5" (uuid 7ec72217-4609-498a-9f30-cd5b399f1731))
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 137.795 73.66 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 95897e2e-f92e-4d69-bb95-9ba89e6a328e)
-    (property "Reference" "C47" (id 0) (at 133.7692 71.4815 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0.1uF" (id 1) (at 131.2292 75.5266 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (id 2) (at 137.795 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.mouser.co.uk/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" (id 3) (at 137.795 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manuf" "Samsung Electro-Mechanics" (id 4) (at 137.795 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part" "CL21B104KACNNND" (id 5) (at 137.795 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor" "Mouser" (id 6) (at 137.795 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor SKU" "187-CL21B104KACNNND" (id 7) (at 137.795 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor Cost" "0.016" (id 8) (at 137.795 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 07b09669-11fc-48c7-a8f0-c22b3a49e03f))
-    (pin "2" (uuid 5a64bcd0-13d9-49c1-bfd7-6bb915279cb9))
-  )
-
-  (symbol (lib_id "power:GNDA") (at 135.255 127 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid a73fc6e4-25be-409e-9aad-f80f00a506e5)
-    (property "Reference" "#PWR074" (id 0) (at 135.255 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GNDA" (id 1) (at 135.255 131.5626 0))
-    (property "Footprint" "" (id 2) (at 135.255 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 135.255 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 41952010-31ac-4780-9666-f610dab5da74))
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 135.255 117.475 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid ad4cd0c8-29ef-4446-a8ec-254774e358d5)
-    (property "Reference" "C46" (id 0) (at 137.5792 116.5665 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0.1uF" (id 1) (at 137.5792 119.3416 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (id 2) (at 135.255 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.mouser.co.uk/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" (id 3) (at 135.255 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manuf" "Samsung Electro-Mechanics" (id 4) (at 135.255 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part" "CL21B104KACNNND" (id 5) (at 135.255 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor" "Mouser" (id 6) (at 135.255 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor SKU" "187-CL21B104KACNNND" (id 7) (at 135.255 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor Cost" "0.016" (id 8) (at 135.255 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f261c049-5081-4792-90c2-750cc32af3e2))
-    (pin "2" (uuid 76b55f8c-6212-4ab6-a4ee-80de04de8992))
-  )
-
-  (symbol (lib_id "power:GND") (at 161.925 90.17 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid be0b8d7f-2344-4a59-961e-643bb6bc51bf)
-    (property "Reference" "#PWR077" (id 0) (at 161.925 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 161.925 94.7326 0))
-    (property "Footprint" "" (id 2) (at 161.925 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 161.925 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 701921be-9888-4619-8df5-eadef1528304))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "8e3eb177-5dbf-4214-9fca-0649e539174c")
+	(paper "A4")
+	(title_block
+		(title "SolarPump v3")
+		(date "2024-02-01")
+		(rev "1.2")
+		(company "IvimeyCom")
+	)
+	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sensor_Current:ACS758xCB-050B-PFF"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ACS758xCB-050B-PFF"
+				(at 2.54 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Sensor_Current:Allegro_CB_PFF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/ACS758-Datasheet.ashx?la=en"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "±50A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 40mV/A, CB-5 PFF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "hall effect current monitor sensor isolated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Allegro*CB*PFF*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ACS758xCB-050B-PFF_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -3.175) (xy -2.54 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.635) (xy -2.54 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 3.175) (xy -2.54 4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ACS758xCB-050B-PFF_1_1"
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "VIOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "IP+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "IP-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GNDA"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GNDA"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GNDA_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDA_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GNDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 137.795 81.28)
+		(diameter 1.016)
+		(color 0 0 0 0)
+		(uuid "04faa6f8-09d5-4a29-a760-46b6402b50f3")
+	)
+	(junction
+		(at 128.905 125.095)
+		(diameter 1.016)
+		(color 0 0 0 0)
+		(uuid "0c9773c4-9ef7-4a9c-88dd-c1d4b9c421a0")
+	)
+	(junction
+		(at 149.225 64.77)
+		(diameter 1.016)
+		(color 0 0 0 0)
+		(uuid "5c99666c-7749-455f-b1a3-c7bcd644158c")
+	)
+	(junction
+		(at 135.255 112.395)
+		(diameter 1.016)
+		(color 0 0 0 0)
+		(uuid "5f670558-2067-470e-996e-8e27b54311da")
+	)
+	(junction
+		(at 128.905 112.395)
+		(diameter 1.016)
+		(color 0 0 0 0)
+		(uuid "63b68ece-0a85-4af3-bc33-a171573f16ef")
+	)
+	(junction
+		(at 144.145 125.095)
+		(diameter 1.016)
+		(color 0 0 0 0)
+		(uuid "6af52136-c934-4b7a-a59f-5db63efd29eb")
+	)
+	(junction
+		(at 161.925 81.28)
+		(diameter 1.016)
+		(color 0 0 0 0)
+		(uuid "b599a67c-09cc-4c41-8156-5cddb3f88557")
+	)
+	(junction
+		(at 128.905 102.235)
+		(diameter 1.016)
+		(color 0 0 0 0)
+		(uuid "f2b6acd1-ec4b-4a0f-b0b7-2146865b1f2a")
+	)
+	(wire
+		(pts
+			(xy 128.905 102.235) (xy 146.685 102.235)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "0708c07f-7546-45e3-8bae-841d404b7496")
+	)
+	(wire
+		(pts
+			(xy 135.255 112.395) (xy 135.255 114.935)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "1292e464-1354-4c64-baef-537d8e1de810")
+	)
+	(wire
+		(pts
+			(xy 144.145 125.095) (xy 167.64 125.095)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "131fdf09-8508-4112-85ee-6748b2a4e918")
+	)
+	(wire
+		(pts
+			(xy 135.255 120.015) (xy 135.255 127)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "1eede8dd-0f3d-48f8-8b5a-7ee920ef8bf9")
+	)
+	(wire
+		(pts
+			(xy 151.765 91.44) (xy 151.765 102.235)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "2215eb29-594b-4ff4-8229-1ecb25900bb3")
+	)
+	(wire
+		(pts
+			(xy 111.76 125.095) (xy 128.905 125.095)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "2bf10e8c-8fda-4b67-ae61-07654ae4a10c")
+	)
+	(wire
+		(pts
+			(xy 128.905 120.015) (xy 128.905 125.095)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "302d961a-a6f6-4a7d-9180-58b784033664")
+	)
+	(wire
+		(pts
+			(xy 128.905 112.395) (xy 128.905 114.935)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "3500cb28-5e62-4e5e-97fa-ad8a3ff6d712")
+	)
+	(wire
+		(pts
+			(xy 128.905 108.585) (xy 128.905 112.395)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "52644524-0fcf-4095-9420-868d063e0723")
+	)
+	(wire
+		(pts
+			(xy 137.795 71.12) (xy 137.795 64.77)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "5e8235a6-18e7-4f8d-a862-df9fdbf7c9b4")
+	)
+	(wire
+		(pts
+			(xy 144.145 114.935) (xy 144.145 125.095)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "6b9f3da1-d035-42da-9900-bcb3f5b6125b")
+	)
+	(wire
+		(pts
+			(xy 137.795 81.28) (xy 141.605 81.28)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "7017e3af-f738-4a34-8eeb-49c2224d008b")
+	)
+	(wire
+		(pts
+			(xy 128.905 102.235) (xy 128.905 103.505)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "7869989b-2cfa-45b3-bc49-7cbbc86e2aa6")
+	)
+	(wire
+		(pts
+			(xy 161.925 88.9) (xy 161.925 90.17)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "87f533e8-2499-4e9c-af30-75e54940f977")
+	)
+	(wire
+		(pts
+			(xy 137.795 81.28) (xy 137.795 83.82)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "8b8fd5d5-dc7e-4159-9680-55f67800e550")
+	)
+	(wire
+		(pts
+			(xy 135.255 112.395) (xy 144.145 112.395)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "8e1ae85c-00f0-48ee-8e8a-12746a9ad8aa")
+	)
+	(wire
+		(pts
+			(xy 156.845 81.28) (xy 161.925 81.28)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "992a578f-e384-4cff-a2ec-a43c0a9f8271")
+	)
+	(wire
+		(pts
+			(xy 128.905 112.395) (xy 135.255 112.395)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "9fe866e2-07fa-4c23-a80f-ff2cb5c4220b")
+	)
+	(wire
+		(pts
+			(xy 151.765 102.235) (xy 167.64 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4d3ac90-1180-47fa-afe1-2295a9ff1ab4")
+	)
+	(wire
+		(pts
+			(xy 149.225 64.77) (xy 170.815 64.77)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "a4eb1399-e20a-452c-9a23-ec873d26d4c3")
+	)
+	(wire
+		(pts
+			(xy 146.685 102.235) (xy 146.685 91.44)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "b30e84f2-a93b-4ce2-9156-99ea60d52519")
+	)
+	(wire
+		(pts
+			(xy 128.905 125.095) (xy 144.145 125.095)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "ba9c920c-9576-479f-883c-9f381ab025e4")
+	)
+	(wire
+		(pts
+			(xy 137.795 64.77) (xy 149.225 64.77)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "c0b2e752-89b1-4194-911a-35c88bffc7df")
+	)
+	(wire
+		(pts
+			(xy 111.76 102.235) (xy 128.905 102.235)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "c26816dc-2b53-4cc4-b43d-95c7cece9463")
+	)
+	(wire
+		(pts
+			(xy 149.225 64.77) (xy 149.225 71.12)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "cdaf4df2-4778-49ad-af88-2ef9a1b4fdef")
+	)
+	(wire
+		(pts
+			(xy 161.925 77.47) (xy 161.925 81.28)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "d3cc5ddb-00d5-4937-93d7-97e5196e3d54")
+	)
+	(wire
+		(pts
+			(xy 137.795 76.2) (xy 137.795 81.28)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "d463fd81-6942-4a58-b79c-cfc3f131b27b")
+	)
+	(wire
+		(pts
+			(xy 161.925 83.82) (xy 161.925 81.28)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "e3ad29ac-7ce9-49f5-b6d4-4c9e6db8766d")
+	)
+	(text "factor = 1 / (1+22) = 0.045\n12V * 0.045 = 0.54V"
+		(exclude_from_sim no)
+		(at 109.855 113.665 0)
+		(effects
+			(font
+				(size 0.75 0.75)
+			)
+			(justify left bottom)
+		)
+		(uuid "5add24a6-fe16-4a04-9988-b0d33e95ae1f")
+	)
+	(hierarchical_label "VCurrent_Batt+"
+		(shape input)
+		(at 170.815 64.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "001269bc-91a3-4ede-90e5-dc04a1ac468d")
+	)
+	(hierarchical_label "BattIO_N"
+		(shape input)
+		(at 167.64 125.095 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "07f054f3-ca97-41d5-9df8-61382ceaab10")
+	)
+	(hierarchical_label "Load_P"
+		(shape output)
+		(at 111.76 102.235 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "5ed28eba-262a-47b7-8754-6f73735f841a")
+	)
+	(hierarchical_label "VBat+"
+		(shape input)
+		(at 144.145 112.395 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "aee16299-4141-4a9f-b589-4cdb9a93eb83")
+	)
+	(hierarchical_label "VBatt-"
+		(shape input)
+		(at 144.145 114.935 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "ce9c282f-b87e-4278-895b-b8cda4a2c575")
+	)
+	(hierarchical_label "BattIO_P"
+		(shape input)
+		(at 167.64 102.235 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "dd110ed7-5caf-4144-868c-5533fa3e6b75")
+	)
+	(hierarchical_label "Load_N"
+		(shape output)
+		(at 111.76 125.095 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "f0d54939-fb66-4fab-9441-033b7bf3ab1c")
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 128.905 117.475 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "224f5c89-4580-415a-9fa5-faef11e69d0a")
+		(property "Reference" "R46"
+			(at 130.4037 116.5665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 130.4037 119.3416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 128.905 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.905 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 128.905 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Yageo"
+			(at 128.905 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "RC0805FR-071KL"
+			(at 128.905 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 128.905 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "603-RC0805FR-071KL"
+			(at 128.905 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.077"
+			(at 128.905 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8b25cd4-cbda-4caa-adbb-9e10a0ecac11")
+		)
+		(pin "2"
+			(uuid "4de0c7de-6a17-48aa-b45d-b5ab6e93a2f8")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/baf33a82-dd29-4dc3-9216-cb3f7018362e"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 161.925 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55c4313d-2d60-41af-8b6c-28a2924c411e")
+		(property "Reference" "#PWR076"
+			(at 161.925 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 161.925 73.8654 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.925 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.925 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.925 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21715b11-5e7a-4886-9f62-7bc8c979fe77")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/baf33a82-dd29-4dc3-9216-cb3f7018362e"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 128.905 106.045 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57f40d1e-c0b9-43ca-90f6-f8f3f2ca0b10")
+		(property "Reference" "R45"
+			(at 130.4037 105.1365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22k"
+			(at 130.4037 107.9116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 128.905 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.905 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 128.905 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Yageo"
+			(at 128.905 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "RC0805FR-0722KL"
+			(at 128.905 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 128.905 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "603-RC0805FR-0722KL"
+			(at 128.905 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.077"
+			(at 128.905 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "adb165de-37ab-4032-9790-ef89b0810128")
+		)
+		(pin "2"
+			(uuid "19af61df-c946-49a5-8570-87204bde91d7")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/baf33a82-dd29-4dc3-9216-cb3f7018362e"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 161.925 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d3f2860-7f19-404d-8525-66b8b883eb04")
+		(property "Reference" "C48"
+			(at 162.9792 84.1815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 162.9792 88.2266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 161.925 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"
+			(at 161.925 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.925 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Samsung Electro-Mechanics"
+			(at 161.925 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "CL21B104KACNNND"
+			(at 161.925 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 161.925 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "187-CL21B104KACNNND"
+			(at 161.925 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.016"
+			(at 161.925 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f182428-a5e0-4bb7-bda7-ffd585b502fc")
+		)
+		(pin "2"
+			(uuid "1851197f-7da4-4be1-99a7-9d8ddf7571ec")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/baf33a82-dd29-4dc3-9216-cb3f7018362e"
+					(reference "C48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 137.795 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "85654bae-6a5c-42a3-baf5-ebdc0f134878")
+		(property "Reference" "#PWR075"
+			(at 137.795 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 137.795 88.3826 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.795 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.795 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.795 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e7a525c-541c-46b1-8484-a7ffd1eec1a3")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/baf33a82-dd29-4dc3-9216-cb3f7018362e"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Current:ACS758xCB-050B-PFF")
+		(at 149.225 81.28 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "866ca83c-5dd7-4674-bfa9-e121a24d212a")
+		(property "Reference" "U13"
+			(at 151.4035 71.3739 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ACS758xCB"
+			(at 143.5484 68.8339 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "solarpump:Allegro_CB_PFF"
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/ACS758-Datasheet.ashx?la=en"
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "~"
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "~"
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "~"
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "~"
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "~"
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1ee7067-4d5f-4d26-9d9c-62cf43e007e6")
+		)
+		(pin "2"
+			(uuid "b1575d8b-e7a4-4bb8-8762-cbf53a8c13b0")
+		)
+		(pin "3"
+			(uuid "53f385d7-0b82-4e57-98e9-cd84048d782f")
+		)
+		(pin "4"
+			(uuid "5ad050a4-5b38-418e-96d5-a376b8fce490")
+		)
+		(pin "5"
+			(uuid "7ec72217-4609-498a-9f30-cd5b399f1731")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/baf33a82-dd29-4dc3-9216-cb3f7018362e"
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 137.795 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "95897e2e-f92e-4d69-bb95-9ba89e6a328e")
+		(property "Reference" "C47"
+			(at 133.7692 71.4815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 131.2292 75.5266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 137.795 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"
+			(at 137.795 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.795 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Samsung Electro-Mechanics"
+			(at 137.795 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "CL21B104KACNNND"
+			(at 137.795 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 137.795 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "187-CL21B104KACNNND"
+			(at 137.795 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.016"
+			(at 137.795 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07b09669-11fc-48c7-a8f0-c22b3a49e03f")
+		)
+		(pin "2"
+			(uuid "5a64bcd0-13d9-49c1-bfd7-6bb915279cb9")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/baf33a82-dd29-4dc3-9216-cb3f7018362e"
+					(reference "C47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 135.255 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a73fc6e4-25be-409e-9aad-f80f00a506e5")
+		(property "Reference" "#PWR074"
+			(at 135.255 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 135.255 131.5626 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.255 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.255 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 135.255 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41952010-31ac-4780-9666-f610dab5da74")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/baf33a82-dd29-4dc3-9216-cb3f7018362e"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 135.255 117.475 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad4cd0c8-29ef-4446-a8ec-254774e358d5")
+		(property "Reference" "C46"
+			(at 137.5792 116.5665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 137.5792 119.3416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 135.255 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"
+			(at 135.255 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 135.255 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Samsung Electro-Mechanics"
+			(at 135.255 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "CL21B104KACNNND"
+			(at 135.255 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 135.255 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "187-CL21B104KACNNND"
+			(at 135.255 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.016"
+			(at 135.255 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f261c049-5081-4792-90c2-750cc32af3e2")
+		)
+		(pin "2"
+			(uuid "76b55f8c-6212-4ab6-a4ee-80de04de8992")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/baf33a82-dd29-4dc3-9216-cb3f7018362e"
+					(reference "C46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.925 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be0b8d7f-2344-4a59-961e-643bb6bc51bf")
+		(property "Reference" "#PWR077"
+			(at 161.925 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.925 94.7326 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.925 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.925 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.925 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "701921be-9888-4619-8df5-eadef1528304")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/baf33a82-dd29-4dc3-9216-cb3f7018362e"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

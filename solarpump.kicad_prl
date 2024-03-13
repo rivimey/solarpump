@@ -1,16 +1,18 @@
 {
   "board": {
-    "active_layer": 41,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
+    "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
-      "pads": 0.38999998569488525,
-      "tracks": 0.6100000143051147,
-      "vias": 0.36000001430511475,
-      "zones": 0.4099999964237213
+      "images": 0.2199999988079071,
+      "pads": 0.6100000143051147,
+      "tracks": 0.6000000238418579,
+      "vias": 0.6499999761581421,
+      "zones": 0.11999999731779099
     },
     "ratsnest_display_mode": 0,
     "selection_filter": {
@@ -63,8 +65,14 @@
       36,
       37
     ],
-    "visible_layers": "ffc3e83_ffffffff",
+    "visible_layers": "ffcd030_ffffffff",
     "zone_display_mode": 0
+  },
+  "git": {
+    "repo_password": "",
+    "repo_type": "",
+    "repo_username": "",
+    "ssh_key": ""
   },
   "meta": {
     "filename": "solarpump.kicad_prl",
