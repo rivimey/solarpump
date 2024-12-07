@@ -1,0 +1,3553 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "16646b67-839f-47f7-96e2-b083ac5b9ce3")
+	(paper "A4")
+	(title_block
+		(title "SolarPump v4")
+		(date "2024-05-05")
+		(rev "2.0")
+		(company "IvimeyCom")
+		(comment 1 "Full Isolation Bus Power Switch")
+	)
+	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Driver_LED:BCR430UW6"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 7.62 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "BCR430UW6"
+				(at -7.62 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SC-74-6_1.55x2.9mm_P0.95mm"
+				(at 1.905 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BCR430UW6.pdf"
+				(at 1.905 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "100 mA adjustable constant current driver (linear), max 42V, SOT26 (SC-74)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED driver constant current"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SC?74*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BCR430UW6_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "BCR430UW6_1_1"
+				(pin no_connect line
+					(at 7.62 2.54 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "REXT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 -2.54 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Transistor_BJT:BC817"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BC817"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "NPN Transistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BC817_0_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BC817_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 5.715)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Transistor_FET:SQM120P10"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 4.953 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SQM120P10_10M1LGE3"
+				(at 4.953 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
+				(at 4.953 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/76943/sqm120p10-10m1l.pdf"
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "-120A Id, -100V Vds, TrenchFET P-Channel Power MOSFET, 8mOhm Ron, 125nC Qg, -55 to 175 °C, TO-263-2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "TrenchFET P-Channel Power MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO?252*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SQM120P10_0_1"
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "SQM120P10_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 82.55 120.142)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09f2c6f3-f57a-4427-946b-c65ec2936b1e")
+	)
+	(junction
+		(at 112.776 79.502)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "117399d3-981d-48d7-8881-7094c5a62980")
+	)
+	(junction
+		(at 174.244 120.142)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a9cf329-0e0d-4740-b562-5f54867f993c")
+	)
+	(junction
+		(at 92.71 79.502)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c4a00c1-6744-4e0d-af39-76311e985040")
+	)
+	(junction
+		(at 143.51 79.502)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31c4e859-91e2-4107-85c1-ae82c965153b")
+	)
+	(junction
+		(at 117.602 129.032)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3621f216-3ccb-41ab-90a8-fe21801f6c59")
+	)
+	(junction
+		(at 129.032 79.502)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a87b888-0a98-42dd-8d49-5300109d079f")
+	)
+	(junction
+		(at 136.652 98.552)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49adc128-59eb-493e-a5f3-da5e831c8150")
+	)
+	(junction
+		(at 174.244 79.502)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51a71119-a76c-4d8a-9924-aec4df415d12")
+	)
+	(junction
+		(at 129.032 98.552)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51e797fa-f40f-43d4-abc7-c917526b5967")
+	)
+	(junction
+		(at 174.244 129.032)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bc8df27-5c43-4230-a306-8962c4e8fa42")
+	)
+	(junction
+		(at 120.396 98.552)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8432e05e-d179-4458-9499-ee222ffbc652")
+	)
+	(junction
+		(at 117.602 98.552)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a058172d-daa6-40e7-a225-298a1e11135f")
+	)
+	(junction
+		(at 184.404 79.502)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc15febd-68c3-49dc-9a0e-e49a08ebb119")
+	)
+	(junction
+		(at 82.55 129.032)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bed4a87b-46ae-412b-8729-e15e680fc805")
+	)
+	(junction
+		(at 82.55 79.502)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf3a6d8d-b787-4dad-9ee0-deb919dbb49d")
+	)
+	(wire
+		(pts
+			(xy 159.004 62.23) (xy 190.5 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07e0494c-7556-4b1e-9233-a8d4b21255d0")
+	)
+	(wire
+		(pts
+			(xy 129.032 91.186) (xy 129.032 98.552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b2fb3f6-0719-46a6-82d8-55ce73c326e6")
+	)
+	(wire
+		(pts
+			(xy 112.776 98.552) (xy 117.602 98.552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eaacf87-d5b5-40b7-a08e-e9c6cd20333a")
+	)
+	(wire
+		(pts
+			(xy 72.136 120.142) (xy 82.55 120.142)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "160d01c9-0594-4af2-a2bd-90c302cc3dee")
+	)
+	(wire
+		(pts
+			(xy 120.396 98.552) (xy 129.032 98.552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cfeea07-6869-484a-8999-6458833ff6bc")
+	)
+	(wire
+		(pts
+			(xy 174.244 79.502) (xy 174.244 94.742)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eb28a48-3d51-4afc-a27b-b95fecb8351e")
+	)
+	(wire
+		(pts
+			(xy 92.71 79.502) (xy 92.71 87.376)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f182b3b-748b-4a15-83dc-0546beeea07c")
+	)
+	(wire
+		(pts
+			(xy 82.55 120.142) (xy 82.55 129.032)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26006568-0673-4d58-8303-acec259a49e0")
+	)
+	(wire
+		(pts
+			(xy 136.652 87.122) (xy 136.652 98.552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "291a30c4-86ab-408c-ac65-95c9bbdbfb6d")
+	)
+	(wire
+		(pts
+			(xy 112.776 79.502) (xy 115.316 79.502)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "29309a00-eaa6-46e1-a3a7-365c0c251fc6")
+	)
+	(wire
+		(pts
+			(xy 184.404 79.502) (xy 184.404 87.376)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "295bf225-3946-4b34-bd83-b78e58470cd0")
+	)
+	(wire
+		(pts
+			(xy 174.244 109.982) (xy 174.244 120.142)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29eccf5c-de16-46d0-8e1a-8993b281d382")
+	)
+	(wire
+		(pts
+			(xy 117.602 110.744) (xy 117.602 112.776)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "3bbbaef2-23b0-4238-9552-bdcca25b695f")
+	)
+	(wire
+		(pts
+			(xy 141.732 79.502) (xy 143.51 79.502)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "3c65d01d-f468-4c9d-af39-9430fc6c8709")
+	)
+	(wire
+		(pts
+			(xy 72.136 102.362) (xy 72.136 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4060763c-b5fc-4aaf-942e-2e6838515f7f")
+	)
+	(wire
+		(pts
+			(xy 131.572 79.502) (xy 129.032 79.502)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "424029ed-aa2c-46df-8e29-380c712af0e0")
+	)
+	(wire
+		(pts
+			(xy 159.004 105.664) (xy 130.81 105.664)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5069d0a9-ac00-4f23-8b88-c992c9832ccc")
+	)
+	(wire
+		(pts
+			(xy 143.51 91.186) (xy 143.51 98.552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5182d51d-71a5-4a48-975d-3711bdfe0840")
+	)
+	(wire
+		(pts
+			(xy 125.476 79.502) (xy 129.032 79.502)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "57003fc3-36d1-45c4-8227-60c06c9c466d")
+	)
+	(wire
+		(pts
+			(xy 70.358 79.502) (xy 82.55 79.502)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "5c65e424-b45d-407b-a9b4-cbf4e95de879")
+	)
+	(wire
+		(pts
+			(xy 117.602 117.856) (xy 117.602 129.032)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ccfa328-f02e-4452-8213-741b9b5adafc")
+	)
+	(wire
+		(pts
+			(xy 82.55 109.982) (xy 82.55 120.142)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f352e64-db09-4fa2-8acc-020405af5957")
+	)
+	(wire
+		(pts
+			(xy 120.396 87.122) (xy 120.396 98.552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66c32d52-addd-456e-bc6f-de0a93ce1c15")
+	)
+	(wire
+		(pts
+			(xy 117.602 98.552) (xy 120.396 98.552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ad4c849-1767-4f50-8ef8-3bd73bdfbaa6")
+	)
+	(wire
+		(pts
+			(xy 129.032 79.502) (xy 129.032 86.106)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78a349a6-7c83-4486-a89b-84d5881dd597")
+	)
+	(wire
+		(pts
+			(xy 164.084 102.362) (xy 163.83 102.362)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78f4187d-410c-4105-8374-50cc88ecd03d")
+	)
+	(wire
+		(pts
+			(xy 117.602 129.032) (xy 174.244 129.032)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "7af3bda6-2328-4870-b27c-6d966f3a4dc2")
+	)
+	(wire
+		(pts
+			(xy 163.83 113.03) (xy 163.83 120.142)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c5cfc97-e675-40ff-80b9-6c005baac607")
+	)
+	(wire
+		(pts
+			(xy 82.55 129.032) (xy 117.602 129.032)
+		)
+		(stroke
+			(width 0.381)
+			(type solid)
+		)
+		(uuid "84aa8805-edcc-4c5e-99cf-8886439b827e")
+	)
+	(wire
+		(pts
+			(xy 184.404 79.502) (xy 190.5 79.502)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "87f1adf0-ca56-4e68-a323-4ece2bf04ef0")
+	)
+	(wire
+		(pts
+			(xy 174.244 129.032) (xy 190.5 129.032)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "8b120a21-9507-4919-ba00-1d737eb60edb")
+	)
+	(wire
+		(pts
+			(xy 92.71 94.996) (xy 92.71 102.362)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bb26d1c-3746-42b3-b6b5-a1f6d306e893")
+	)
+	(wire
+		(pts
+			(xy 129.032 98.552) (xy 136.652 98.552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96072850-077d-46fc-af10-f1497045a15d")
+	)
+	(wire
+		(pts
+			(xy 159.004 62.23) (xy 159.004 105.664)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cbb5800-6cf7-4b34-b54f-6a97fb92fcca")
+	)
+	(wire
+		(pts
+			(xy 136.652 98.552) (xy 143.51 98.552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cdf4175-5f6c-4348-8e7c-21447b5820ab")
+	)
+	(wire
+		(pts
+			(xy 72.136 120.142) (xy 72.136 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d5e5bfe-8d9a-41a6-b3ec-9a9789bd72d9")
+	)
+	(wire
+		(pts
+			(xy 82.55 79.502) (xy 92.71 79.502)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "abd9323f-7777-429e-8350-9f503b2c8018")
+	)
+	(wire
+		(pts
+			(xy 143.51 79.502) (xy 174.244 79.502)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "aec57203-e769-4070-aa6e-a0678dc14d5c")
+	)
+	(wire
+		(pts
+			(xy 72.39 102.362) (xy 72.136 102.362)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aff6c478-10e1-4bf6-a8a0-7342c6e635b8")
+	)
+	(wire
+		(pts
+			(xy 174.244 120.142) (xy 174.244 129.032)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8a4f20f-93a9-41c1-a4aa-206f0d009b74")
+	)
+	(wire
+		(pts
+			(xy 125.222 105.664) (xy 125.73 105.664)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "bd73478d-0048-4c73-9e18-d30c61217aa2")
+	)
+	(wire
+		(pts
+			(xy 184.404 94.996) (xy 184.404 102.362)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c03a976d-7eb3-4b2c-b25b-5b2f497cea5b")
+	)
+	(wire
+		(pts
+			(xy 163.83 102.362) (xy 163.83 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caeabbe6-6e5e-43f4-999e-8a96bf4665b1")
+	)
+	(wire
+		(pts
+			(xy 92.71 79.502) (xy 112.776 79.502)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "cb8ec6f3-9c03-4e05-adcc-00598a9c0aab")
+	)
+	(wire
+		(pts
+			(xy 82.55 129.032) (xy 92.71 129.032)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cda91bea-2da1-46f9-bd02-a277c4b49ce2")
+	)
+	(wire
+		(pts
+			(xy 117.602 98.552) (xy 117.602 100.584)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7633537-c1fb-4575-9b3c-bbc132aa9b81")
+	)
+	(wire
+		(pts
+			(xy 112.776 91.186) (xy 112.776 98.552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d77515d8-63a0-4a8b-9596-15853d899292")
+	)
+	(wire
+		(pts
+			(xy 82.55 79.502) (xy 82.55 94.742)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daf22dec-6bd6-406d-a153-7f365f26e749")
+	)
+	(wire
+		(pts
+			(xy 70.358 129.032) (xy 82.55 129.032)
+		)
+		(stroke
+			(width 0.381)
+			(type solid)
+		)
+		(uuid "dd6e8e68-d98c-41e9-a48b-91882bd637c6")
+	)
+	(wire
+		(pts
+			(xy 112.776 79.502) (xy 112.776 86.106)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e14fa4b8-4e3a-47a9-8de1-a9419ae17b77")
+	)
+	(wire
+		(pts
+			(xy 163.83 120.142) (xy 174.244 120.142)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6b43607-1f85-4504-9778-9edf4f301c44")
+	)
+	(wire
+		(pts
+			(xy 143.51 79.502) (xy 143.51 86.106)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e849adcb-ecce-4ab5-a885-68d45f58e8c1")
+	)
+	(wire
+		(pts
+			(xy 174.244 79.502) (xy 184.404 79.502)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "ed77b31c-1eb5-42b0-9259-019e6ad4e55a")
+	)
+	(rectangle
+		(start 103.378 56.896)
+		(end 155.702 150.876)
+		(stroke
+			(width 0.254)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d3de8849-543c-41b7-9f4c-5bcb6e2d48c5)
+	)
+	(text "Power switch"
+		(exclude_from_sim no)
+		(at 109.474 61.468 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(thickness 0.2997)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "14643919-1111-423e-af7d-ccfb749895db")
+	)
+	(text "Vds < 100V\nIds < 120A\nQg ~ 150nC"
+		(exclude_from_sim no)
+		(at 120.65 67.056 0)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+		)
+		(uuid "4233c878-6fce-4830-9dc5-507fd1826b22")
+	)
+	(text "- Pair of FETs act as bidir switch,\n preventing flow in and out of solr\n leads when switched off.\n- 470K Res is path for gate discharge.\n- Bipolar Q enables MCU to actively\n switch off solr (rather than only\n reverse polarity events)"
+		(exclude_from_sim no)
+		(at 124.206 119.126 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left)
+		)
+		(uuid "860910db-2855-4c23-b96f-9e96d459dd35")
+	)
+	(text "Use constant current driver device because\nthe voltage on Pwr bus is not a constant.\n\nRext sets current in LED; According to DS:\n\"The current flowing into pin LED is\nproportional to the current flowing out\nof pin RS by a ratio of about 520:1\"\n\n30K sets current to ~20mA according to\ndatasheet graph (Infineon Fig3). For the\nAPT3216SRCPRV LED the current limit is\n(10mA .. 28mA).\n\nRext = (Iout / 610.53) ^ -1.005632\n\n[30K < Rext < 60K] results in [20mA < If 10mA]\nso something like 42..46K should be good.\n\nBCR430 Max supply voltage: 42V"
+		(exclude_from_sim no)
+		(at 26.67 104.14 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left)
+		)
+		(uuid "ddc9378a-d67e-447b-a0a5-57b504a9bef8")
+	)
+	(label "PwrLedB"
+		(at 184.404 99.822 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b163a1e-4696-4702-b509-cc925afe7ccb")
+	)
+	(label "PwrLedA"
+		(at 92.71 101.092 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left bottom)
+		)
+		(uuid "439fc8f8-30bb-466e-be9c-9c47eab26967")
+	)
+	(label "PwrGate"
+		(at 124.968 98.552 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left bottom)
+		)
+		(uuid "e18eaf6e-f998-4ae4-9b99-39b0b2fb6d69")
+	)
+	(label "PwrSwMid"
+		(at 130.302 79.502 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left bottom)
+		)
+		(uuid "f6ff1480-9e90-491a-862f-87a38491476e")
+	)
+	(hierarchical_label "PwrA-"
+		(shape input)
+		(at 70.358 129.032 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify right)
+		)
+		(uuid "281574cc-6f84-4813-9a4b-1012309dbe65")
+	)
+	(hierarchical_label "PwrCtl"
+		(shape input)
+		(at 190.5 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left)
+		)
+		(uuid "2f901f66-d896-42a5-bfde-e856a79d086e")
+	)
+	(hierarchical_label "PwrB-"
+		(shape input)
+		(at 190.5 129.032 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left)
+		)
+		(uuid "54e4cff5-31c5-4e1f-89a4-658066d7893d")
+	)
+	(hierarchical_label "PwrB+"
+		(shape input)
+		(at 190.5 79.502 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left)
+		)
+		(uuid "9df1d1aa-b74d-4751-bb4c-1e3f64bd47c9")
+	)
+	(hierarchical_label "PwrA+"
+		(shape input)
+		(at 70.358 79.502 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify right)
+		)
+		(uuid "d1808992-628c-4d40-8cb5-38dd3ae13f75")
+	)
+	(symbol
+		(lib_id "Driver_LED:BCR430UW6")
+		(at 82.55 102.362 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "170b123b-4d8f-4919-9e80-1b7b3c9c30d1")
+		(property "Reference" "U32"
+			(at 76.454 96.012 0)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "BCR430UW6"
+			(at 83.312 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SC-74-6_1.55x2.9mm_P0.95mm"
+			(at 84.455 108.712 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BCR430UW6.pdf"
+			(at 84.455 111.252 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100 mA adjustable constant current driver (linear), max 42V, SOT26 (SC-74)"
+			(at 82.55 102.362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5c836d73-9394-4bec-beb7-c5ca1fa85e98")
+		)
+		(pin "1"
+			(uuid "33930d17-b40e-401f-b874-ea82aa5072e6")
+		)
+		(pin "4"
+			(uuid "3ecff8cd-00d3-4eae-82c6-3c7c1b06584a")
+		)
+		(pin "3"
+			(uuid "98bf9d3f-a250-477b-886f-f118eb37e026")
+		)
+		(pin "5"
+			(uuid "2289f237-e0ca-4877-93d3-8a2bd3f7d371")
+		)
+		(pin "6"
+			(uuid "9d8462ff-9a57-4765-8d13-6267051831f8")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "U32")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "U36")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "U34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.71 91.186 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37dbe399-0709-4659-b252-164bafd3db7c")
+		(property "Reference" "D29"
+			(at 89.408 91.44 90)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "Red,150mcd"
+			(at 93.218 88.646 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+			(at 92.71 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/216/APT3216SRCPRV-56995.pdf"
+			(at 92.71 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "604-APT3216SURCK"
+			(at 92.71 91.186 0)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 92.71 91.186 0)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Kingbright"
+			(at 92.71 91.186 0)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.24"
+			(at 92.71 91.186 0)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vf" "1.95"
+			(at 92.71 91.186 0)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "APT3216SURCK "
+			(at 92.71 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 92.71 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bed99507-ff5d-4002-bd97-a69002616e2e")
+		)
+		(pin "2"
+			(uuid "13d5a2f0-9ec3-4111-a863-498fb8d9b55e")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "D29")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "D33")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "D31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 184.404 91.186 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4aea8135-f2a5-47c7-9fa8-6106cb83c1b6")
+		(property "Reference" "D30"
+			(at 181.102 91.44 90)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "Red,150mcd"
+			(at 184.912 88.646 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+			(at 184.404 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/216/APT3216SRCPRV-56995.pdf"
+			(at 184.404 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 184.404 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "604-APT3216SURCK"
+			(at 184.404 91.186 0)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 184.404 91.186 0)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Kingbright"
+			(at 184.404 91.186 0)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.24"
+			(at 184.404 91.186 0)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vf" "1.95"
+			(at 184.404 91.186 0)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "APT3216SURCK "
+			(at 184.404 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 184.404 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "708bf22f-f0ff-4e67-9acf-2fcccd3f3b69")
+		)
+		(pin "2"
+			(uuid "e75fd3ad-e29e-431f-ae8e-f1c08533e8fc")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "D30")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "D34")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "D32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:SQM120P10")
+		(at 120.396 82.042 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b1f5a9c-b5b8-455f-88ab-1eaf59dba95d")
+		(property "Reference" "Q18"
+			(at 120.396 73.152 90)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "SQM120P10"
+			(at 120.396 75.692 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
+			(at 122.301 77.089 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/76943/sqm120p10-10m1l.pdf"
+			(at 124.206 76.962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "-120A Id, -100V Vds, TrenchFET P-Channel Power MOSFET, 8mOhm Ron, 125nC Qg, -55 to 175 °C, TO-263-2"
+			(at 120.396 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 120.396 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc77a5dd-9964-4797-8bd8-ec5540bd5654")
+		)
+		(pin "2"
+			(uuid "6f080185-7d23-427b-b342-66ab79f7c9c1")
+		)
+		(pin "3"
+			(uuid "4a88e68a-e060-458a-9566-15ba52fa0932")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "Q18")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "Q25")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "Q22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 143.51 88.646 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6dbeee12-bc14-4f15-bce2-c93bdfdd1535")
+		(property "Reference" "C112"
+			(at 144.018 86.868 0)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF,100V Tant"
+			(at 138.176 90.678 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 143.51 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"
+			(at 143.51 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Samsung Electro-Mechanics"
+			(at 143.51 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "CL21B104KACNNND"
+			(at 143.51 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 143.51 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "187-CL21B104KACNNND"
+			(at 143.51 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.016"
+			(at 143.51 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 143.51 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6851ca89-6474-4b3a-8b37-b05625626e25")
+		)
+		(pin "2"
+			(uuid "0833845e-f3c4-4d9d-9a12-0c3ce16a15e2")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "C112")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "C116")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "C114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 72.136 110.49 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7799c822-a138-42b0-9253-86539e5e3a9e")
+		(property "Reference" "R99"
+			(at 74.2992 110.49 90)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "42K"
+			(at 70.2541 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 72.136 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.136 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 72.136 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Yageo"
+			(at 72.136 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "AC0805FR-0710KL"
+			(at 72.136 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 72.136 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "603-AC0805FR-0710KL"
+			(at 72.136 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.077"
+			(at 72.136 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 72.136 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "410e02b0-6272-48d6-b8c3-7d6c735b5c52")
+		)
+		(pin "2"
+			(uuid "e2465f2d-e900-4d6f-b70d-a0f82bdcc9f2")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "R99")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "R112")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "R107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_LED:BCR430UW6")
+		(at 174.244 102.362 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e9e64b3-a885-42ce-9dc5-7b602a76e95a")
+		(property "Reference" "U33"
+			(at 168.148 96.012 0)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "BCR430UW6"
+			(at 175.006 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SC-74-6_1.55x2.9mm_P0.95mm"
+			(at 176.149 108.712 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BCR430UW6.pdf"
+			(at 176.149 111.252 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100 mA adjustable constant current driver (linear), max 42V, SOT26 (SC-74)"
+			(at 174.244 102.362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "22660f60-0375-4849-b8c2-19ceb71915f1")
+		)
+		(pin "1"
+			(uuid "547c1e25-6868-47ca-bd54-a354cf2aebfe")
+		)
+		(pin "4"
+			(uuid "121b7d74-cc87-4b0d-93f5-20d51183bcd6")
+		)
+		(pin "3"
+			(uuid "05424bf2-7989-4aa4-820a-8012f6758635")
+		)
+		(pin "5"
+			(uuid "41f38ea3-db2f-4bbc-a65c-4c9152f5b29a")
+		)
+		(pin "6"
+			(uuid "444bd69e-2fdc-4f07-a10c-efee863225c2")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "U33")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "U37")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "U35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 128.27 105.664 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c82fb49-3c3d-404d-bd3e-610bbdb16a7c")
+		(property "Reference" "R101"
+			(at 128.27 107.8272 90)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 128.27 103.7821 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 128.27 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 128.27 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Yageo"
+			(at 128.27 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "AC0805FR-0710KL"
+			(at 128.27 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 128.27 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "603-AC0805FR-0710KL"
+			(at 128.27 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.077"
+			(at 128.27 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 128.27 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0efe907e-9894-4da1-9d57-74e44b064c57")
+		)
+		(pin "2"
+			(uuid "548898d9-c1ca-40ff-82cb-3f49b7a6669c")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "R101")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "R114")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "R109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 163.83 110.49 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3dc8850-6427-4987-86d2-e88b0e68d752")
+		(property "Reference" "R103"
+			(at 165.9932 110.49 90)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "33k"
+			(at 161.9481 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 163.83 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 163.83 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Yageo"
+			(at 163.83 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "AC0805FR-0710KL"
+			(at 163.83 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 163.83 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "603-AC0805FR-0710KL"
+			(at 163.83 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.077"
+			(at 163.83 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 163.83 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "644b1511-c9ec-4070-aff8-1de4274b8437")
+		)
+		(pin "2"
+			(uuid "a0fdbe95-f738-43ee-8ffc-3f40a5437141")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "R103")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "R116")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "R111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 129.032 88.646 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b351a468-d5d3-4eb9-a204-00f0d25dc12f")
+		(property "Reference" "R102"
+			(at 126.8688 88.646 90)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "470k"
+			(at 130.9139 88.646 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 129.032 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.032 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 129.032 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Yageo"
+			(at 129.032 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "AC0805FR-0710KL"
+			(at 129.032 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 129.032 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "603-AC0805FR-0710KL"
+			(at 129.032 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.077"
+			(at 129.032 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 129.032 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8fe3395f-2c11-40a4-8493-4cc9f1915782")
+		)
+		(pin "2"
+			(uuid "89c7e606-8b0d-4a92-bc82-dbc7a0e33c83")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "R102")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "R115")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "R110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 112.776 88.646 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e33ac0d8-472d-4c01-9401-a25762e9427a")
+		(property "Reference" "C111"
+			(at 109.982 86.614 0)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF,100V Tant"
+			(at 105.41 90.678 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 112.776 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"
+			(at 112.776 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 112.776 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Samsung Electro-Mechanics"
+			(at 112.776 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "CL21B104KACNNND"
+			(at 112.776 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 112.776 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "187-CL21B104KACNNND"
+			(at 112.776 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.016"
+			(at 112.776 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 112.776 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2eb1ae5-a62a-4a3f-908b-045021e624a6")
+		)
+		(pin "2"
+			(uuid "da42c63e-dc30-4932-b122-cc994cbf5f7d")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "C111")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "C115")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "C113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 117.602 115.316 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb1a95ee-a1f5-462e-8e6f-e8c970697a52")
+		(property "Reference" "R100"
+			(at 115.4388 115.316 90)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 119.4839 115.316 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 117.602 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 117.602 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 117.602 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manuf" "Yageo"
+			(at 117.602 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "AC0805FR-0710KL"
+			(at 117.602 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Mouser"
+			(at 117.602 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor SKU" "603-AC0805FR-0710KL"
+			(at 117.602 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Cost" "0.077"
+			(at 117.602 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 117.602 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8779317d-5f7f-4062-8a58-d33e48eb0124")
+		)
+		(pin "2"
+			(uuid "aef17335-680a-4c7d-9deb-9b211f8b85ef")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "R100")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "R113")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "R108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC817")
+		(at 120.142 105.664 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd0e4c20-0c47-4d67-a29d-19df98c235c2")
+		(property "Reference" "Q17"
+			(at 115.062 104.3939 0)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC817"
+			(at 115.062 106.9339 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 115.062 107.569 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+			(at 120.142 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 120.142 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 120.142 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ed79e41-780c-4295-9d35-14a6d23c9506")
+		)
+		(pin "3"
+			(uuid "cd77ed15-8c2d-442b-8f84-8e9683763b77")
+		)
+		(pin "2"
+			(uuid "2567d7fc-e35d-4703-aa3f-7b0d95c810fd")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "Q17")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "Q24")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "Q21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:SQM120P10")
+		(at 136.652 82.042 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd168057-fe50-4a59-944a-c623c1daf582")
+		(property "Reference" "Q19"
+			(at 136.652 73.152 90)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Value" "SQM120P10"
+			(at 136.652 75.692 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
+			(at 134.747 77.089 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/76943/sqm120p10-10m1l.pdf"
+			(at 132.842 76.962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "-120A Id, -100V Vds, TrenchFET P-Channel Power MOSFET, 8mOhm Ron, 125nC Qg, -55 to 175 °C, TO-263-2"
+			(at 136.652 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 136.652 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8ebfc59-6c8e-4fb9-aea8-e3060a26b54e")
+		)
+		(pin "2"
+			(uuid "8f74e3b5-3dbe-43ea-84ae-38f98ee6026f")
+		)
+		(pin "3"
+			(uuid "e9535685-e6e5-4a35-8171-cbc8dfaae8d3")
+		)
+		(instances
+			(project "solarpump"
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2670ab9f-8dc1-47a2-80fb-27dad11900b6"
+					(reference "Q19")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/2ff52d8c-055e-4d79-9738-afae9ff4681d"
+					(reference "Q26")
+					(unit 1)
+				)
+				(path "/37742242-4bd3-43da-ba1b-5f1a71dea0e5/87027464-c312-42ec-978b-340fbf795f11"
+					(reference "Q23")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
